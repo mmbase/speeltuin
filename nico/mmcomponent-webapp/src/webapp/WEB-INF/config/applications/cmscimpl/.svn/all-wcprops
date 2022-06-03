@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/34607/speeltuin/nico/mmcomponent-webapp/src/webapp/WEB-INF/config/applications/cmscimpl
+END
+layoutrel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/34607/speeltuin/nico/mmcomponent-webapp/src/webapp/WEB-INF/config/applications/cmscimpl/layoutrel.xml
+END
+allowrel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/34607/speeltuin/nico/mmcomponent-webapp/src/webapp/WEB-INF/config/applications/cmscimpl/allowrel.xml
+END
+site.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/34607/speeltuin/nico/mmcomponent-webapp/src/webapp/WEB-INF/config/applications/cmscimpl/site.xml
+END
+namedallowrel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/34607/speeltuin/nico/mmcomponent-webapp/src/webapp/WEB-INF/config/applications/cmscimpl/namedallowrel.xml
+END
+stylesheet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/34607/speeltuin/nico/mmcomponent-webapp/src/webapp/WEB-INF/config/applications/cmscimpl/stylesheet.xml
+END
+view.xml
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/34607/speeltuin/nico/mmcomponent-webapp/src/webapp/WEB-INF/config/applications/cmscimpl/view.xml
+END
+layout.xml
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/34607/speeltuin/nico/mmcomponent-webapp/src/webapp/WEB-INF/config/applications/cmscimpl/layout.xml
+END
+viewrel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/34607/speeltuin/nico/mmcomponent-webapp/src/webapp/WEB-INF/config/applications/cmscimpl/viewrel.xml
+END

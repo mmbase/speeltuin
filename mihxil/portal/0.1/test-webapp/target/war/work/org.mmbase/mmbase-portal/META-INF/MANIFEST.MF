@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: michiel
+Build-Jdk: 1.6.0_11
+url: http://www.mmbase.org/mm2/mmbase-parent/mmbase-application-parent
+ /mmbase-portal
+
+Name: org/mmbase
+Build-Date: 2009-12-11T20:48
+Comment: MMBase. MMBase portal (mmbase-portal).
+Description: null
+Distribution: 0.1-SNAPSHOT
+SCM-Revision: 40213
+Vendor: MMBase Community
+Version: 0.1-SNAPSHOT.2009-12-11T20:48
+

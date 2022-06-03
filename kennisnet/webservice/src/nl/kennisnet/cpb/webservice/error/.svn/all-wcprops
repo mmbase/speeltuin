@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/error
+END
+WebserviceNotImplementedException.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/error/WebserviceNotImplementedException.java
+END
+UnexpectedNodeStateException.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/error/UnexpectedNodeStateException.java
+END
+XMLError.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/error/XMLError.java
+END
+EntryNotFoundException.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/error/EntryNotFoundException.java
+END
+WebserviceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/error/WebserviceException.java
+END
+BadRequestException.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/error/BadRequestException.java
+END
+XMLTranslationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/error/XMLTranslationException.java
+END

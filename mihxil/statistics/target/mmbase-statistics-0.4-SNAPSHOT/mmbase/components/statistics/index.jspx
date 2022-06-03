@@ -1,0 +1,47 @@
+<div
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:mm="http://www.mmbase.org/mmbase-taglib-2.0"
+    xmlns:mmstats="http://www.mmbase.org/mmbase-statistics"
+    class="mm_c c_statistics b_example ${requestScope.componentClassName}"
+    id="${requestScope.componentId}">
+  <jsp:output omit-xml-declaration="true" />
+  <h2>MMBase statistics</h2>
+
+
+  <h3>Simple sums and averages</h3>
+  <p>Some objects</p>
+  <ul>
+    <mm:listnodes type="object" max="10" id="objects">
+      <li><mm:field name="number" />: <mm:nodeinfo type="gui" /></li>
+    </mm:listnodes>
+  </ul>
+  <p>
+    Now report some things:
+  </p>
+  <p>Sum of numbers: ${mmstats:sum(objects, 'number')}</p>
+  <p>Average: ${mmstats:average(objects, 'number')}</p>
+
+
+  <h3>More complex calculations</h3>
+
+  <c:set var="totalmean" value="${mmstats:measurement()}" />
+
+  <c:forEach begin="1" end="10" step="2" var="i">
+    <mm:context>
+      <ul>
+        <mm:listnodes id="objects" type="object"  max="2" offset="${i}">
+          <li><mm:field name="number" />: <mm:nodeinfo type="gui" /></li>
+        </mm:listnodes>
+        <li>Sum of number: ${mmstats:sum(objects, 'number')}</li>
+        <mmstats:enter measure="${totalmean}" value="${mmstats:sum(objects, 'number')}" />
+      </ul>
+    </mm:context>
+  </c:forEach>
+  <p>
+    Average sum: ${totalmean}
+  </p>
+</div>
+
+

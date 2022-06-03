@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/34607/speeltuin/nico/portlets-calendar-contrib/src/webapp/editors/config/calendar_items
+END
+load_calendar_items.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/34607/speeltuin/nico/portlets-calendar-contrib/src/webapp/editors/config/calendar_items/load_calendar_items.xml
+END
+calendar_items.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/34607/speeltuin/nico/portlets-calendar-contrib/src/webapp/editors/config/calendar_items/calendar_items.xml
+END
+delete_calendar_items.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/34607/speeltuin/nico/portlets-calendar-contrib/src/webapp/editors/config/calendar_items/delete_calendar_items.xml
+END
+create_calendar_items.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/34607/speeltuin/nico/portlets-calendar-contrib/src/webapp/editors/config/calendar_items/create_calendar_items.xml
+END
+edit_calendar_items.xml
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/34607/speeltuin/nico/portlets-calendar-contrib/src/webapp/editors/config/calendar_items/edit_calendar_items.xml
+END

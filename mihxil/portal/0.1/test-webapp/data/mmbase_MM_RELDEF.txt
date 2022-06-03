@@ -1,0 +1,5 @@
+54,5,system,related,related,2,Related,Related,6
+56,5,system,posrel,posrel,2,Posrel,Posrel,20
+61,5,system,sorted,sorted,2,Sorted,Sorted,20
+134,5,system,blockposrel,blockposrel,2,BlockPosRel,BlockPosRel,14
+135,5,system,cartesianrel,cartesianrel,2,Cartesianrel,CartesianRel,30

@@ -1,0 +1,10 @@
+#surefire
+#Sun Jun 26 13:15:09 CEST 2011
+java.awt.headless=true
+surefire.fork.vmargs=-ea
+user.dir=/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp
+mmbase.defaultcloudcontext=mock\:local
+localRepository=/Users/michiel/.m2/repository
+user.language=en
+java.util.logging.config.file=/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/test-classes/logging.properties
+basedir=/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp

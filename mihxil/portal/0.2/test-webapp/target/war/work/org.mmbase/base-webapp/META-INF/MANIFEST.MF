@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nightly
+Build-Jdk: 1.6.0_18
+url: http://www.mmbase.org/mm2/mmbase-parent/base-webapp
+Class-Path: mmbase-1.9-SNAPSHOT.jar commons-fileupload-1.2.1.jar commo
+ ns-io-1.3.2.jar jstl-1.1.2.jar standard-1.1.2.jar log4j-1.2.14.jar
+
+Name: org/mmbase
+Build-Date: 2010-03-18T05:38
+Comment: MMBase. MMBase Base webapp (base-webapp).
+Description: This is a minimalistic war containing the essentials for 
+ an MMBase web applications.
+     This can be used as initial war overlay for your own project.
+Distribution: 1.9-SNAPSHOT
+SCM-Revision: 41487
+Vendor: MMBase Community
+Version: 1.9-SNAPSHOT.2010-03-18T05:38
+

@@ -1,0 +1,140 @@
+/*
+
+This software is OSI Certified Open Source Software.
+OSI Certified is a certification mark of the Open Source Initiative.
+
+The license (Mozilla version 1.0) can be read at the MMBase site.
+See http://www.MMBase.org/license
+
+*/
+package org.meeuw;
+import java.util.*;
+import javax.servlet.http.HttpServletRequest;
+import org.mmbase.util.transformers.CharTransformer;
+import org.mmbase.util.transformers.Identifier;
+import org.mmbase.framework.*;
+import org.mmbase.framework.basic.*;
+import org.mmbase.bridge.*;
+import org.mmbase.bridge.util.*;
+import org.mmbase.util.logging.*;
+import org.mmbase.util.functions.*;
+import org.mmbase.storage.search.*;
+import org.apache.commons.lang.StringUtils;
+
+/**
+
+ *
+ * @author Michiel Meeuwissen
+ * @version $Id$
+ * @since MMBase-1.9
+ */
+public class SimpleUrlConverter implements UrlConverter {
+    private static final Logger log = Logging.getLoggerInstance(SimpleUrlConverter.class);
+
+    private static final Parameter[] DEF = new Parameter[] {Parameter.REQUEST, Framework.N};
+
+    private final static Identifier trans = new Identifier();
+
+    private String nodeManager = "segments";
+    private String postfix = "/";
+    private String space = "-";
+
+    public SimpleUrlConverter(BasicFramework fw) {
+    }
+
+    public void setNodeManager(String nm) {
+        nodeManager = nm;
+    }
+
+    /**
+     * Postfix for pages. Defaults to '/'. But also '.html' would be a nice possibility. Second one is best for wgetting. First one works well when
+     * welcome file replacement is used too (for serving with apache)
+     */
+    public void setPostfix(String pf) {
+        postfix = pf;
+    }
+
+    public void setSpace(String s) {
+        trans.setWhitespaceReplacer(s);
+    }
+
+    @Override
+    public int getDefaultWeight() {
+        return 1000;
+    }
+
+
+    @Override
+    public Parameter<?>[] getParameterDefinition() {
+        return DEF;
+    }
+
+
+    @Override
+    public boolean isFilteredMode(Parameters frameworkParameters) throws FrameworkException {
+        return true;
+    }
+
+
+    @Override
+    public Url getUrl(String path,
+                      Map<String, ?> parameters,
+                      Parameters frameworkParameters,
+                      boolean escapeAmps) throws FrameworkException {
+        if (StringUtils.isEmpty(path)) {
+            Node n = frameworkParameters.get(Framework.N);
+            if (n == null) {
+                return Url.NOT;
+            } else {
+                Node parent = n.getNodeValue("parent");
+                NodeList related = SearchUtil.findRelatedOrderedNodeList(parent, "segments", "index", "index.pos");
+                HttpServletRequest request = frameworkParameters.get(Parameter.REQUEST);
+                if (related.getNode(0).getNumber() == n.getNumber()) {
+                    return new BasicUrl(this, BasicUrlConverter.getUrl("/", parameters, request, escapeAmps));
+                } else {
+                    return new BasicUrl(this, BasicUrlConverter.getUrl("/" + trans.transform(n.getStringValue("title").toLowerCase()) + postfix, parameters, request, escapeAmps));
+                }
+            }
+        } else {
+            return Url.NOT;
+        }
+    }
+
+    @Override
+    public Url getProcessUrl(String path,
+                             Map<String, ?> parameters,
+                             Parameters frameworkParameters,
+                             boolean escapeAmps) throws FrameworkException {
+        return getUrl(path, parameters, frameworkParameters, escapeAmps);
+    }
+
+
+
+    @Override
+    public Url getInternalUrl(String path,
+                              Map<String, ?> params,
+                              Parameters frameworkParameters) throws FrameworkException {
+        String[] p = path.split("/");
+        if (p.length > 1) {
+            Cloud cloud = ContextProvider.getDefaultCloudContext().getCloud("mmbase");
+            NodeManager nm = cloud.getNodeManager(nodeManager);
+            NodeQuery q = nm.createQuery();
+            String like = StringUtils.removeEnd(p[1], postfix).replaceAll(trans.getWhitespaceReplacer(), "_");;
+            Constraint cons = Queries.createConstraint(q, "title", Queries.getOperator("LIKE"), like);
+            q.setCaseSensitive((FieldConstraint) cons, false);
+            Queries.addConstraint(q, cons);
+
+            NodeList list = nm.getList(q);
+            Node node;
+            if (list.size() > 0) {
+                node = list.getNode(0);
+                return new BasicUrl(this, "/index.jspx?n=" + node.getNumber());
+            } else {
+                return Url.NOT;
+            }
+        } else {
+            return Url.NOT;
+        }
+    }
+
+}

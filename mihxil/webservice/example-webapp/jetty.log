@@ -1,0 +1,364 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building MMBase Example WebService webapp
+[INFO]    task-segment: [jetty:run]
+[INFO] ------------------------------------------------------------------------
+[INFO] Preparing jetty:run
+[INFO] [buildnumber:create {execution: default}]
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp && svn --non-interactive info
+[INFO] Working directory: /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp
+[INFO] Storing buildNumber: 37330 at timestamp: 2009-08-03T14:50
+[INFO] [resources:resources]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/java
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/resources-filtered
+[INFO] Copying 1 resource to org/mmbase/config
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/generated/src/main/resources
+[INFO] [compiler:compile]
+[INFO] No sources to compile
+[INFO] [resources:testResources]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/test/java
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/test/resources
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/test/java
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/generated/src/test/resources
+[INFO] [compiler:testCompile]
+[INFO] No sources to compile
+[INFO] [jetty:run]
+[INFO] Configuring Jetty for project: MMBase Example WebService webapp
+[INFO] Webapp source directory = /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp
+[INFO] Reload Mechanic: automatic
+[INFO]  jetty-env.xml = /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/jetty-env.xml
+[INFO] Classes = /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/classes
+[INFO] Added extra scan target:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/config
+[INFO] Context path = /example-webservice-webapp
+[INFO] Tmp directory =  determined at runtime
+[INFO] Web defaults = org/mortbay/jetty/webapp/webdefault.xml
+[INFO] Web overrides =  none
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/base-webapp/1.9-servlet25-SNAPSHOT/base-webapp-1.9-servlet25-SNAPSHOT.war!/
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/mmbase-webservice/0.1-SNAPSHOT/mmbase-webservice-0.1-SNAPSHOT.war!/
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/mmbase-cxf/0.1-SNAPSHOT/mmbase-cxf-0.1-SNAPSHOT.war!/
+[INFO] web.xml file = /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp/WEB-INF/web.xml
+[INFO] Webapp directory = /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp
+[INFO] Starting jetty 6.1.19 ...
+2009-08-03 14:50:20,673 INFO Starting UrlFilter
+2009-08-03 14:50:21,105 INFO Set thread delay time to 10000
+2009-08-03 14:50:21,227 INFO Found classWeights {\Ajar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8688717002673989502\.jar!/org/mmbase/config/datatypes.xml\z=-1}
+2009-08-03 14:50:21,328 INFO Logging: org.mmbase.util.logging.log4j.Log4jImpl (log4j.xml).  Configured in jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8688717002673989502.jar!/org/mmbase/config/log/log.xml
+2009-08-03 14:50:21,333 INFO logging configurationfile : log4j.xml
+2009-08-03 14:50:21,346 INFO using /log/ resolving in [nodes of type 0, {}, /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp/WEB-INF/config, ClassLoader /org/mmbase/config, ClassLoader /] for resolving log4j.xml -> file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp/WEB-INF/config/log/log4j.xml
+14:50:21,467 INF 37182 kb mmbase.module.core.MMBaseContext info.90 - ===========================
+14:50:21,471 INF 37182 kb mmbase.module.core.MMBaseContext info.90 - MMBase logging initialized.
+14:50:21,471 INF 37182 kb mmbase.module.core.MMBaseContext info.90 - ===========================
+14:50:21,471 INF 37182 kb mmbase.module.core.MMBaseContext info.90 - java.version       : 1.6.0_11
+14:50:21,472 INF 37182 kb mmbase.module.core.MMBaseContext info.90 - user.dir          : /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp
+14:50:21,472 INF 37182 kb mmbase.module.core.MMBaseContext info.90 - configuration     : / resolving in [nodes of type 0, {}, /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp/WEB-INF/config, ClassLoader /org/mmbase/config, ClassLoader /]
+14:50:21,474 INF 38138 kb mmbase.module.core.MMBaseContext info.90 - webroot           : / resolving in [/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp, ServletResource /]
+14:50:21,477 INF 38138 kb mmbase.module.core.MMBaseContext info.90 - version           : MMBase 1.9.2.2009-08-03T14:48 (r37275)
+14:50:21,483 INF 38138 kb mmbase.module.core.MMBaseContext info.90 - total memory      : 79 MiB
+14:50:21,487 INF 38138 kb mmbase.module.core.MMBaseContext info.90 - free memory       : 42 MiB
+14:50:21,515 INF 39093 kb mmbase.module.core.MMBaseContext info.90 - MMBase locale     : en
+14:50:21,737 INF 42887 kb mmbase.module.core.MMBaseContext info.90 - start time        : Monday, August 3, 2009 2:50:21 PM CEST
+14:50:21,738 INF 42887 kb mmbase.module.core.MMBaseContext info.90 - mmbase.htmlroot   : /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp
+14:50:21,739 INF 42887 kb mmbase.module.core.MMBaseContext info.90 - context           : /example-webservice-webapp/
+14:50:21,740 INF 42887 kb org.mmbase.framework.FrameworkFilter info.90 - UrlFilter initialized
+14:50:21,816 INF 45266 kb org.mmbase.module.Module loadModulesFromDisk.560 - In /modules/ resolving in [nodes of type 0, {}, /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp/WEB-INF/config, ClassLoader /org/mmbase/config, ClassLoader /] the following module XML's were found [jdbc.xml, mmadmin.xml, mmbaseroot.xml]
+14:50:21,917 INF 48603 kb org.mmbase.module.Module loadInitParameters.337 - Put for jdbc {}
+14:50:21,919 INF 49550 kb org.mmbase.servlet.MMBaseServlet init.208 - Init of servlet version.
+14:50:21,941 INF 49550 kb org.mmbase.servlet.MMBaseServlet init.208 - Init of servlet MMWebService.
+[INFO] Started Jetty Server
+14:50:22,020 INF 51302 kb org.mmbase.module.Module loadInitParameters.337 - Put for mmadmin {}
+14:50:22,066 INF 52751 kb org.mmbase.module.Module loadInitParameters.337 - Put for mmbaseroot {basename=test, datasource-context=java:comp/env, database=hsqldb_csv, datadir=data, datasource=jdbc/MMBase}
+14:50:22,098 INF 52751 kb org.mmbase.module.Module startModules.426 - Starting module jdbc
+14:50:22,100 INF 52751 kb org.mmbase.module.Module startModules.426 - Starting module mmadmin
+14:50:22,107 INF 53706 kb mmbase.module.core.MMBase getDataDir.1422 - MMBase data dir: /home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/data
+14:50:22,108 INF 53706 kb mmbase.module.core.MMBase init.300 - MMBase Time zone      : Central European Time (it's now August 3, 2009 2:50:22 PM CEST)
+14:50:23,409 INF 35471 kb v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager.462 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> z8kfsx821q8knj3225gz1|198dc19, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.hsqldb.jdbcDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx821q8knj3225gz1|198dc19, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:hsqldb:file:data/hsqldb/didactor, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+14:50:23,882 INF 47141 kb storage.implementation.database.DatabaseStorageManagerFactory getDocumentReader.374 - Configuration used for database storage: jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8688717002673989502.jar!/org/mmbase/config/storage/databases/hsqldb_csv.xml
+14:50:23,974 INF 49665 kb mmbase.module.core.MMBase initializeStorage.1170 - Using class: 'org.mmbase.storage.implementation.database.DatabaseStorageManagerFactory'.
+14:50:25,850 INF 54037 kb mmbase.module.core.MMBase loadBuilders.834 - Loading builders: [core/daymarks.xml, core/insrel.xml, core/mmservers.xml, core/oalias.xml, core/object.xml, core/reldef.xml, core/syncnodes.xml, core/systemproperties.xml, core/typedef.xml, core/typerel.xml, core/versions.xml, properties.xml]
+14:50:27,826 INF 45141 kb org.mmbase.security.MMBaseCopConfig <init>.98 - using: 'jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8688717002673989502.jar!/org/mmbase/config/security/security.xml' as configuration file for security
+14:50:28,010 INF 48221 kb security.implementation.context.ContextAuthentication load.104 - loaded module with the name: 'anonymous' with class: org.mmbase.security.implementation.context.AnonymousLogin
+14:50:28,012 INF 48221 kb security.implementation.context.ContextAuthentication load.104 - loaded module with the name: 'name/password' with class: org.mmbase.security.implementation.context.PasswordLogin
+14:50:28,020 INF 48221 kb security.implementation.context.ContextAuthentication load.104 - loaded module with the name: 'class' with class: org.mmbase.security.implementation.context.ClassLogin
+14:50:28,066 INF 50791 kb mmbase.module.core.MMBase init.459 - MMBase is up and running
+14:50:28,134 INF 53837 kb org.mmbase.module.Module startModules.426 - Starting module mmbaseroot
+14:50:28,310 INF 56185 kb org.mmbase.servlet.MMBaseServlet setMMBase.162 - MMBase servlets are ready to receive requests, started in 0 min 6 sec.
+14:50:28,775 INF 65302 kb mmbase.security.classsecurity.ClassAuthentication load.72 - Loading classauthentication.xml( [http://localhost/node/classauthentication.xml, http://localhost/NOTFOUND/classauthentication.xml, file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp/WEB-INF/config/security/classauthentication.xml, jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8688717002673989502.jar!/org/mmbase/config/security/classauthentication.xml])
+14:50:29,854 ERR 58480 kb mmbase.util.xml.ErrorHandler error.106 - jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8688717002673989502.jar!/org/mmbase/config/functions/utils.xml line:2 column:13: class org.xml.sax.SAXParseException Document is invalid: no grammar found.
+14:50:29,855 ERR 58734 kb mmbase.util.xml.ErrorHandler error.106 - jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8688717002673989502.jar!/org/mmbase/config/functions/utils.xml line:2 column:13: class org.xml.sax.SAXParseException Document root element "functionset", must match DOCTYPE root "null".
+14:50:30,084 ERR 64425 kb mmbase.util.xml.ErrorHandler error.106 - jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-6361374442744511544.jar!/org/mmbase/config/functions/webservices.xml line:2 column:13: class org.xml.sax.SAXParseException Document is invalid: no grammar found.
+14:50:30,085 ERR 64425 kb mmbase.util.xml.ErrorHandler error.106 - jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-6361374442744511544.jar!/org/mmbase/config/functions/webservices.xml line:2 column:13: class org.xml.sax.SAXParseException Document root element "functionset", must match DOCTYPE root "null".
+14:50:30,101 INF 64934 kb org.mmbase.webservice.WebServiceRepository readConfiguration.106 - Parsing jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-6361374442744511544.jar!/org/mmbase/config/webservices.xml
+14:50:30,184 ERR 65701 kb mmbase.util.xml.ErrorHandler error.106 - jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-6361374442744511544.jar!/org/mmbase/config/webservices.xml line:2 column:53: class org.xml.sax.SAXParseException cvc-elt.1: Cannot find the declaration of element 'webservices'.
+14:50:30,203 INF 65960 kb org.mmbase.webservice.WebServiceRepository readConfiguration.147 - Found list GET org.mmbase.webservice.ComponentWebService@49ff3f
+14:50:30,204 INF 66215 kb org.mmbase.webservice.WebServiceRepository readConfiguration.147 - Found password GET org.mmbase.webservice.ComponentWebService@14ac54
+14:50:30,206 INF 66215 kb org.mmbase.webservice.WebServiceRepository readConfiguration.147 - Found password2 GET org.mmbase.webservice.FunctionWebService@4e94a4
+14:50:30,207 INF 66469 kb org.mmbase.webservice.WebServiceRepository readConfiguration.147 - Found testaction GET org.mmbase.webservice.FunctionWebService@100b3c2
+14:50:30,208 INF 66469 kb org.mmbase.webservice.WebServiceRepository readConfiguration.106 - Parsing jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8758041913877183184.jar!/org/mmbase/config/webservices.xml
+14:50:30,244 ERR 67232 kb mmbase.util.xml.ErrorHandler error.106 - jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8758041913877183184.jar!/org/mmbase/config/webservices.xml line:2 column:53: class org.xml.sax.SAXParseException cvc-elt.1: Cannot find the declaration of element 'webservices'.
+14:50:30,249 INF 67486 kb org.mmbase.webservice.WebServiceRepository readConfiguration.147 - Found sayHi GET org.mmbase.webservice.AnyFunctionWebService@3a2a52
+14:50:30,250 INF 67486 kb org.mmbase.util.FileWatcher info.90 - Delay of []  (2000 ms) is smaller than the delay of the watching thread. Will not watch more often then once per 10000 ms. Set to 10000
+14:50:30,512 INF 31471 kb org.mmbase.framework.ComponentRepository readConfiguration.259 - Found the following components [core, mmexamples, taglib, test, webservices, x]
+14:50:30,512 INF 31945 kb org.mmbase.util.FileWatcher info.90 - Delay of []  (2000 ms) is smaller than the delay of the watching thread. Will not watch more often then once per 10000 ms. Set to 10000
+14:50:30,607 INF 34792 kb mmbase.framework.basic.BasicFramework configure.150 - Configured with jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8688717002673989502.jar!/org/mmbase/config/framework.xml class org.mmbase.framework.basic.BasicFramework BASIC: This is the BasicFramework, change my settings in 'config/framework.xml'.: ChainedUrlConverter[/mmbase/]
+14:50:31,165 INF 62813 kb storage.implementation.database.DatabaseStorageManagerFactory getDocumentReader.374 - Configuration used for database storage: jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8688717002673989502.jar!/org/mmbase/config/storage/databases/hsqldb_csv.xml
+14:50:37,075 INF 28780 kb org.mmbase.webservice.WebServiceServlet doWebService.92 - Desired mime type text/html for requests class org.mortbay.jetty.Request GET /example-webservice-webapp/ws/list.html HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.1) Gecko/20090716 Ubuntu/9.04 (jaunty) Shiretoko/3.5.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: nl,en-us;q=0.7,zh;q=0.3
+Accept-Encoding: gzip,deflate
+Accept-Charset: UTF-8,*
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: mmbase_adminpages_language=client; realm_cloud_mmbase=MMBase_example-webservice-webapp@localhost; JSESSIONID=za3cope6ie7v; initial_state=%7B%27kupu-toolbox-links%27%3A%20%271%27%2C%20%27kupu-toolbox-images%27%3A%20%271%27%2C%20%27kupu-toolbox-tables%27%3A%20%271%27%2C%20%27kupu-toolbox-divs%27%3A%20%271%27%2C%20%27kupu-toolbox-flash%27%3A%20%271%27%2C%20%27kupu-toolbox-debug%27%3A%20%270%27%7D; mmjspeditors_liststyle=short; JSESSIONID=1lvw8sqyk1vpz; MMBase-EditWizard=|isArray:true; MMBase_Ident=1249042385203
+Authorization: Basic YWRtaW46YWRtaW4yaw==
+Cache-Control: max-age=0
+
+ response: class org.mortbay.jetty.Response HTTP/1.1 200 
+X-Powered-By: MMBase 1.9.2.2009-08-03T14:48 (r37275)
+
+
+14:50:37,285 INF 35798 kb org.mmbase.webservice.ComponentWebService render.132 - Transforming jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8688717002673989502.jar!/org/mmbase/config/xslt/copy.xslt
+14:50:37,288 INF 36268 kb org.mmbase.webservice.ComponentWebService render.96 - Start rendering /mmbase/components/webservices/index.jspx?[] [javax.servlet.http.HttpServletRequest request=GET /example-webservice-webapp/ws/list.html HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.1) Gecko/20090716 Ubuntu/9.04 (jaunty) Shiretoko/3.5.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: nl,en-us;q=0.7,zh;q=0.3
+Accept-Encoding: gzip,deflate
+Accept-Charset: UTF-8,*
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: mmbase_adminpages_language=client; realm_cloud_mmbase=MMBase_example-webservice-webapp@localhost; JSESSIONID=za3cope6ie7v; initial_state=%7B%27kupu-toolbox-links%27%3A%20%271%27%2C%20%27kupu-toolbox-images%27%3A%20%271%27%2C%20%27kupu-toolbox-tables%27%3A%20%271%27%2C%20%27kupu-toolbox-divs%27%3A%20%271%27%2C%20%27kupu-toolbox-flash%27%3A%20%271%27%2C%20%27kupu-toolbox-debug%27%3A%20%270%27%7D; mmjspeditors_liststyle=short; JSESSIONID=1lvw8sqyk1vpz; MMBase-EditWizard=|isArray:true; MMBase_Ident=1249042385203
+Authorization: Basic YWRtaW46YWRtaW4yaw==
+Cache-Control: max-age=0
+
+, javax.servlet.http.HttpServletResponse response=HTTP/1.1 200 
+Content-Type: text/html
+X-Powered-By: MMBase 1.9.2.2009-08-03T14:48 (r37275)
+X-MMBase-User: admin
+
+, javax.servlet.http.HttpServletResponse response=HTTP/1.1 200 
+Content-Type: text/html
+X-Powered-By: MMBase 1.9.2.2009-08-03T14:48 (r37275)
+X-MMBase-User: admin
+
+, javax.servlet.http.HttpServletRequest request=GET /example-webservice-webapp/ws/list.html HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.1) Gecko/20090716 Ubuntu/9.04 (jaunty) Shiretoko/3.5.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: nl,en-us;q=0.7,zh;q=0.3
+Accept-Encoding: gzip,deflate
+Accept-Charset: UTF-8,*
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: mmbase_adminpages_language=client; realm_cloud_mmbase=MMBase_example-webservice-webapp@localhost; JSESSIONID=za3cope6ie7v; initial_state=%7B%27kupu-toolbox-links%27%3A%20%271%27%2C%20%27kupu-toolbox-images%27%3A%20%271%27%2C%20%27kupu-toolbox-tables%27%3A%20%271%27%2C%20%27kupu-toolbox-divs%27%3A%20%271%27%2C%20%27kupu-toolbox-flash%27%3A%20%271%27%2C%20%27kupu-toolbox-debug%27%3A%20%270%27%7D; mmjspeditors_liststyle=short; JSESSIONID=1lvw8sqyk1vpz; MMBase-EditWizard=|isArray:true; MMBase_Ident=1249042385203
+Authorization: Basic YWRtaW46YWRtaW4yaw==
+Cache-Control: max-age=0
+
+]
+14:50:37,299 DEB 36502 kb org.mmbase.framework.JspRenderer render.96 - Using block.parameters {response=HTTP/1.1 200 
+Content-Type: text/html
+X-Powered-By: MMBase 1.9.2.2009-08-03T14:48 (r37275)
+X-MMBase-User: admin
+
+, request=GET /example-webservice-webapp/ws/list.html HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.1) Gecko/20090716 Ubuntu/9.04 (jaunty) Shiretoko/3.5.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: nl,en-us;q=0.7,zh;q=0.3
+Accept-Encoding: gzip,deflate
+Accept-Charset: UTF-8,*
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: mmbase_adminpages_language=client; realm_cloud_mmbase=MMBase_example-webservice-webapp@localhost; JSESSIONID=za3cope6ie7v; initial_state=%7B%27kupu-toolbox-links%27%3A%20%271%27%2C%20%27kupu-toolbox-images%27%3A%20%271%27%2C%20%27kupu-toolbox-tables%27%3A%20%271%27%2C%20%27kupu-toolbox-divs%27%3A%20%271%27%2C%20%27kupu-toolbox-flash%27%3A%20%271%27%2C%20%27kupu-toolbox-debug%27%3A%20%270%27%7D; mmjspeditors_liststyle=short; JSESSIONID=1lvw8sqyk1vpz; MMBase-EditWizard=|isArray:true; MMBase_Ident=1249042385203
+Authorization: Basic YWRtaW46YWRtaW4yaw==
+Cache-Control: max-age=0
+
+}
+14:50:37,303 DEB 36502 kb org.mmbase.framework.JspRenderer render.97 - Rendering /mmbase/components/webservices/index.jspx status 200
+14:50:39,314 INF 56457 kb bridge.jsp.taglib.ContextReferrerTag setPageContext.181 - Using  EVAL_BODY_BUFFERED (If you use a modern app-server, which supports it, you prefer EVAL_BODY_INCLUDE. See web.xml)
+14:50:39,359 ERR 57330 kb org.mmbase.webservice.ComponentWebService render.101 - STREAM
+java.lang.IllegalStateException: STREAM
+	at org.mortbay.jetty.Response.getWriter(Response.java:616)
+	at org.apache.jasper.runtime.JspWriterImpl.initOut(JspWriterImpl.java:187)
+	at org.apache.jasper.runtime.JspWriterImpl.flushBuffer(JspWriterImpl.java:180)
+	at org.apache.jasper.runtime.PageContextImpl.release(PageContextImpl.java:237)
+	at org.apache.jasper.runtime.JspFactoryImpl.internalReleasePageContext(JspFactoryImpl.java:173)
+	at org.apache.jasper.runtime.JspFactoryImpl.releasePageContext(JspFactoryImpl.java:124)
+	at org.apache.jsp.mmbase.components.webservices.index_jspx._jspService(org.apache.jsp.mmbase.components.webservices.index_jspx:71)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:109)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:389)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:486)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:380)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:502)
+	at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:389)
+	at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+	at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+	at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+	at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:417)
+	at org.mortbay.jetty.servlet.Dispatcher.include(Dispatcher.java:192)
+	at org.mmbase.framework.JspRenderer.render(JspRenderer.java:100)
+	at org.mmbase.webservice.ComponentWebService$1.render(ComponentWebService.java:97)
+	at org.mmbase.webservice.ComponentWebService$2.run(ComponentWebService.java:122)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:619)
+14:50:39,363 INF 57459 kb org.mmbase.webservice.ComponentWebService render.139 - Ready jar:file:/home/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8688717002673989502.jar!/org/mmbase/config/xslt/copy.xslt
+14:50:40,574 ERR 39959 kb mmbase.errorpages.500.jsp _jspService.240 - 20090803145040562:
+Headers
+----------
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.1) Gecko/20090716 Ubuntu/9.04 (jaunty) Shiretoko/3.5.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: nl,en-us;q=0.7,zh;q=0.3
+Accept-Encoding: gzip,deflate
+Accept-Charset: UTF-8,*
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: mmbase_adminpages_language=client; realm_cloud_mmbase=MMBase_example-webservice-webapp@localhost; JSESSIONID=za3cope6ie7v; initial_state=%7B%27kupu-toolbox-links%27%3A%20%271%27%2C%20%27kupu-toolbox-images%27%3A%20%271%27%2C%20%27kupu-toolbox-tables%27%3A%20%271%27%2C%20%27kupu-toolbox-divs%27%3A%20%271%27%2C%20%27kupu-toolbox-flash%27%3A%20%271%27%2C%20%27kupu-toolbox-debug%27%3A%20%270%27%7D; mmjspeditors_liststyle=short; JSESSIONID=1lvw8sqyk1vpz; MMBase-EditWizard=|isArray:true; MMBase_Ident=1249042385203
+Authorization: Basic YWRtaW46YWRtaW4yaw==
+Cache-Control: max-age=0
+
+Attributes
+----------
+javax.servlet.forward.request_uri: /example-webservice-webapp/ws/list.html
+org.mmbase.framework.JspRenderer.NoResponseWrap: true
+javax.servlet.forward.path_info: /list.html
+javax.servlet.forward.context_path: /example-webservice-webapp
+javax.servlet.error.status_code: 500
+javax.servlet.error.exception_type: class java.lang.RuntimeException
+javax.servlet.error.servlet_name: MMWebService
+response: HTTP/1.1 500 
+Content-Type: text/html
+X-Powered-By: MMBase 1.9.2.2009-08-03T14:48 (r37275)
+X-MMBase-User: admin
+Set-Cookie: JSESSIONID=ow4de4lj7ign;Path=/example-webservice-webapp
+
+
+org.mortbay.jetty.error_page: /mmbase/errorpages/500.jsp
+javax.servlet.forward.servlet_path: /ws
+javax.servlet.error.message: java.lang.IllegalStateException: STREAM
+request: GET /example-webservice-webapp/ws/list.html HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.1.1) Gecko/20090716 Ubuntu/9.04 (jaunty) Shiretoko/3.5.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: nl,en-us;q=0.7,zh;q=0.3
+Accept-Encoding: gzip,deflate
+Accept-Charset: UTF-8,*
+Keep-Alive: 300
+Connection: keep-alive
+Cookie: mmbase_adminpages_language=client; realm_cloud_mmbase=MMBase_example-webservice-webapp@localhost; JSESSIONID=za3cope6ie7v; initial_state=%7B%27kupu-toolbox-links%27%3A%20%271%27%2C%20%27kupu-toolbox-images%27%3A%20%271%27%2C%20%27kupu-toolbox-tables%27%3A%20%271%27%2C%20%27kupu-toolbox-divs%27%3A%20%271%27%2C%20%27kupu-toolbox-flash%27%3A%20%271%27%2C%20%27kupu-toolbox-debug%27%3A%20%270%27%7D; mmjspeditors_liststyle=short; JSESSIONID=1lvw8sqyk1vpz; MMBase-EditWizard=|isArray:true; MMBase_Ident=1249042385203
+Authorization: Basic YWRtaW46YWRtaW4yaw==
+Cache-Control: max-age=0
+
+
+org.mortbay.jetty.newSessionId: ow4de4lj7ign
+javax.servlet.error.exception: java.lang.RuntimeException: java.lang.IllegalStateException: STREAM
+javax.servlet.error.request_uri: /example-webservice-webapp/ws/list.html
+
+Misc. properties
+----------
+method: GET
+querystring: null
+requesturl: http://localhost:8080/example-webservice-webapp/mmbase/errorpages/500.jsp
+mmbase version: MMBase 1.9.2.2009-08-03T14:48 (r37275)
+status: 500
+
+Parameters
+----------
+
+Exception
+----------
+
+java.lang.RuntimeException: STREAM
+java.lang.IllegalStateException: STREAM
+        at org.mortbay.jetty.Response.getWriter(Response.java:616)
+        at org.apache.jasper.runtime.JspWriterImpl.initOut(JspWriterImpl.java:187)
+        at org.apache.jasper.runtime.JspWriterImpl.flushBuffer(JspWriterImpl.java:180)
+        at org.apache.jasper.runtime.PageContextImpl.release(PageContextImpl.java:237)
+        at org.apache.jasper.runtime.JspFactoryImpl.internalReleasePageContext(JspFactoryImpl.java:173)
+        at org.apache.jasper.runtime.JspFactoryImpl.releasePageContext(JspFactoryImpl.java:124)
+        at org.apache.jsp.mmbase.components.webservices.index_jspx._jspService(org.apache.jsp.mmbase.components.webservices.index_jspx:71)
+        at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:109)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:389)
+        at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:486)
+        at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:380)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:502)
+        at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:389)
+        at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+        at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+        at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+        at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:417)
+        at org.mortbay.jetty.servlet.Dispatcher.include(Dispatcher.java:192)
+        at org.mmbase.framework.JspRenderer.render(JspRenderer.java:100)
+        at org.mmbase.webservice.ComponentWebService$1.render(ComponentWebService.java:97)
+        at org.mmbase.webservice.ComponentWebService$2.run(ComponentWebService.java:122)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)
+-------caused:
+java.lang.IllegalStateException: STREAM
+java.lang.RuntimeException: java.lang.IllegalStateException: STREAM
+        at org.mmbase.webservice.ComponentWebService.render(ComponentWebService.java:141)
+        at org.mmbase.webservice.ComponentWebService.serve(ComponentWebService.java:150)
+        at org.mmbase.webservice.WebServiceServlet.doWebService(WebServiceServlet.java:186)
+        at org.mmbase.webservice.WebServiceServlet.doGet(WebServiceServlet.java:202)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+        at org.mmbase.servlet.MMBaseServlet.service(MMBaseServlet.java:500)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:502)
+        at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1157)
+        at org.mmbase.framework.FrameworkFilter.doFilter(FrameworkFilter.java:241)
+        at org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1148)
+        at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:387)
+        at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+        at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+        at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+        at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:417)
+        at org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:230)
+        at org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+        at org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+        at org.mortbay.jetty.Server.handle(Server.java:326)
+        at org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:534)
+        at org.mortbay.jetty.HttpConnection$RequestHandler.headerComplete(HttpConnection.java:864)
+        at org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:539)
+        at org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:212)
+        at org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+        at org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:409)
+        at org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:520)
+java.lang.IllegalStateException: STREAM
+        at org.mortbay.jetty.Response.getWriter(Response.java:616)
+        at org.apache.jasper.runtime.JspWriterImpl.initOut(JspWriterImpl.java:187)
+        at org.apache.jasper.runtime.JspWriterImpl.flushBuffer(JspWriterImpl.java:180)
+        at org.apache.jasper.runtime.PageContextImpl.release(PageContextImpl.java:237)
+        at org.apache.jasper.runtime.JspFactoryImpl.internalReleasePageContext(JspFactoryImpl.java:173)
+        at org.apache.jasper.runtime.JspFactoryImpl.releasePageContext(JspFactoryImpl.java:124)
+        at org.apache.jsp.mmbase.components.webservices.index_jspx._jspService(org.apache.jsp.mmbase.components.webservices.index_jspx:71)
+        at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:109)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:389)
+        at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:486)
+        at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:380)
+        at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+        at org.mortbay.jetty.servlet.ServletHolder.handle(ServletHolder.java:502)
+        at org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:389)
+        at org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+        at org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+        at org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+        at org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:417)
+        at org.mortbay.jetty.servlet.Dispatcher.include(Dispatcher.java:192)
+        at org.mmbase.framework.JspRenderer.render(JspRenderer.java:100)
+        at org.mmbase.webservice.ComponentWebService$1.render(ComponentWebService.java:97)
+        at org.mmbase.webservice.ComponentWebService$2.run(ComponentWebService.java:122)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+        at java.lang.Thread.run(Thread.java:619)

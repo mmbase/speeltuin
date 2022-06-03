@@ -1,0 +1,14 @@
+2,2,system,typedef,Defines object types
+3,2,system,object,Objects
+4,2,system,versions,Keeps track of what versions of apps/builders etc etc are installed
+5,2,system,reldef,Assigns roles to relation object types
+6,2,system,insrel,Basic relation
+7,2,system,typerel,Defines the allowed relations between object types
+8,2,system,mmservers,MMBase Servers defines node of a MMBase within this system
+10,2,system,oalias,An (object) alias can be a - more human readable - name substitution for an object
+14,2,system,systemproperties,"This object type facilitates the use of nodes as system properties.
+     The special property ""mmservers"" is used to switch between environments 
+     (production, acceptance, test and development).
+     The SystemProperties class will search for the mmba"
+17,2,system,daymarks,Daycount object used to keep track of ages of objects
+23,2,system,syncnodes,Synchronisation Nodes are used to map remote MMBase nodes to this node

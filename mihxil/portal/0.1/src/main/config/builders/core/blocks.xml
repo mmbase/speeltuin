@@ -1,0 +1,78 @@
+<?xml version="1.0" ?>
+<builder
+    xmlns="http://www.mmbase.org/xmlns/builder"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mmbase.org/xmlns/builder http://www.mmbase.org/xmlns/builder.xsd"
+    name="blocks" maintainer="mmbase.org" version="1" extends="object">
+
+  <names>
+    <singular xml:lang="en">Webblock</singular>
+    <singular xml:lang="nl">Webblok</singular>
+    <plural xml:lang="en">Webblocks</plural>
+    <plural xml:lang="nl">Webblokken</plural>
+  </names>
+
+  <descriptions>
+    <description xml:lang="en">
+      Building blocks for a (home)page
+    </description>
+    <description xml:lang="nl">
+      Bouwblokken voor een (home)page
+    </description>
+  </descriptions>
+
+  <fieldlist>
+     <field name="component" state="persistent">
+       <gui>
+         <guiname xml:lang="nl">Component</guiname>
+         <guiname xml:lang="en">Component</guiname>
+         <guiname xml:lang="zh">模型</guiname>
+       </gui>
+       <datatype base="components" xmlns="http://www.mmbase.org/xmlns/datatypes" />
+     </field>
+    <field name="name">
+      <descriptions>
+        <description xml:lang="en">Name of the webblock</description>
+        <description xml:lang="nl">Naam van de webblok</description>
+      </descriptions>
+      <gui>
+        <guiname xml:lang="en">Name</guiname>
+        <guiname xml:lang="nl">Naam</guiname>
+      </gui>
+      <editor>
+        <positions>
+          <list>1</list>
+        </positions>
+      </editor>
+      <datatype base="eline" xmlns="http://www.mmbase.org/xmlns/datatypes" >
+        <required value="true" />
+        <maxLength value="126" />
+      </datatype>
+    </field>
+
+    <field name="description">
+      <descriptions>
+        <description xml:lang="en">Description</description>
+        <description xml:lang="nl">Omschrijving van een webblock</description>
+      </descriptions>
+
+      <gui>
+        <guiname xml:lang="nl">Omschrijving</guiname>
+        <guiname xml:lang="en">Description</guiname>
+      </gui>
+      <datatype base="field" xmlns="http://www.mmbase.org/xmlns/datatypes" >
+        <maxLength value="2048" />
+      </datatype>
+    </field>
+
+    <field name="windowstate">
+      <gui>
+        <guiname xml:lang="nl">Weergave</guiname>
+        <guiname xml:lang="en">Display Type</guiname>
+      </gui>
+      <datatype base="windowstate" xmlns="http://www.mmbase.org/xmlns/datatypes" />
+    </field>
+
+
+  </fieldlist>
+</builder>

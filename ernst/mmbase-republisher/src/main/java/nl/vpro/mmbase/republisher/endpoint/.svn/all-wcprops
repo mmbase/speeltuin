@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/35910/speeltuin/ernst/mmbase-republisher/src/main/java/nl/vpro/mmbase/republisher/endpoint
+END
+DocumentModification.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/35910/speeltuin/ernst/mmbase-republisher/src/main/java/nl/vpro/mmbase/republisher/endpoint/DocumentModification.java
+END
+DummyPublicationEndPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/35464/speeltuin/ernst/mmbase-republisher/src/main/java/nl/vpro/mmbase/republisher/endpoint/DummyPublicationEndPoint.java
+END
+ModificationType.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/35464/speeltuin/ernst/mmbase-republisher/src/main/java/nl/vpro/mmbase/republisher/endpoint/ModificationType.java
+END
+PublicationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/35464/speeltuin/ernst/mmbase-republisher/src/main/java/nl/vpro/mmbase/republisher/endpoint/PublicationException.java
+END
+PublicationEndPoint.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/35464/speeltuin/ernst/mmbase-republisher/src/main/java/nl/vpro/mmbase/republisher/endpoint/PublicationEndPoint.java
+END

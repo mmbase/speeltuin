@@ -1,0 +1,28 @@
+<list
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:mm="http://www.mmbase.org/mmbase-taglib-2.0"
+    class="mm_c c_webservices b_index ${requestScope.componentClassName}"
+    id="${requestScope.componentId}">
+  <jsp:output omit-xml-declaration="true" />
+  <title>Available web-services</title>
+
+  <mm:listfunction set="webservices" name="index">
+    <c:forEach items="${_.value}" var="ws">
+      <webservice>
+        <name>${_.key}</name>
+        <method>${ws.key}</method>
+        <class>${ws.value.class.name}</class>
+        <action>${ws.value.action}</action>
+        <parameters>
+          <c:forEach items="${ws.value.parameterDefinition}" var="p">
+            <param>
+              <name>${p.name}</name>
+              <jsp:expression>org.mmbase.util.xml.XMLWriter.write(org.mmbase.datatypes.DataTypes.toXml(((org.mmbase.util.functions.Parameter)pageContext.getAttribute("p")).getDataType()), false, true)</jsp:expression>
+            </param>
+          </c:forEach>
+        </parameters>
+      </webservice>
+    </c:forEach>
+  </mm:listfunction>
+</list>

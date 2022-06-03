@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/style/layout
+END
+help.css
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/style/layout/help.css
+END
+login.css
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/style/layout/login.css
+END
+base.css
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/style/layout/base.css
+END
+list.css
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/style/layout/list.css
+END
+exception.css
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/style/layout/exception.css
+END
+wizard.css
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/style/layout/wizard.css
+END
+searchlist.css
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/style/layout/searchlist.css
+END
+debug.css
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/style/layout/debug.css
+END

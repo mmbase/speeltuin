@@ -1,0 +1,4 @@
+94,12,default,Download MMBase,http://www.mmbase.org/download,Download MMBase
+96,12,default,The MMBase Bugtracker,http://www.mmbase.org/bug,The MMBase Bugtracker
+98,12,default,Pinkpop2000,http://www.vpro.nl/pinkpop2000,Pinkpop 2000
+100,12,default,EO,http://www.eo.nl,EO website

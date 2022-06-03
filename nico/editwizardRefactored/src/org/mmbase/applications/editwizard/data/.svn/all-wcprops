@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/src/org/mmbase/applications/editwizard/data
+END
+ObjectData.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/src/org/mmbase/applications/editwizard/data/ObjectData.java
+END
+BaseData.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/src/org/mmbase/applications/editwizard/data/BaseData.java
+END
+RelationData.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/src/org/mmbase/applications/editwizard/data/RelationData.java
+END
+DataUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/src/org/mmbase/applications/editwizard/data/DataUtils.java
+END
+FieldData.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/src/org/mmbase/applications/editwizard/data/FieldData.java
+END
+BinaryData.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/src/org/mmbase/applications/editwizard/data/BinaryData.java
+END

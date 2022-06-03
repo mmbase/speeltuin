@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/packagehandlers
+END
+CloudModelPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/packagehandlers/CloudModelPackage.java
+END
+ConfigBasicPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/packagehandlers/ConfigBasicPackage.java
+END
+DisplayThemePackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/packagehandlers/DisplayThemePackage.java
+END
+PackageVersionContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/packagehandlers/PackageVersionContainer.java
+END
+DisplayHtmlPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/packagehandlers/DisplayHtmlPackage.java
+END
+DataApps1Package.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/packagehandlers/DataApps1Package.java
+END
+JavaJarPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/packagehandlers/JavaJarPackage.java
+END
+PackageInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/packagehandlers/PackageInterface.java
+END
+BasicPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/packagehandlers/BasicPackage.java
+END
+FunctionSetPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/packagehandlers/FunctionSetPackage.java
+END
+PackageContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/packagehandlers/PackageContainer.java
+END

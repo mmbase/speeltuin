@@ -1,0 +1,35 @@
+<jsp:root
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:mm="http://www.mmbase.org/mmbase-taglib-2.0"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    xmlns:os="http://www.opensymphony.com/oscache"
+    version="2.0"
+    >
+  <jsp:directive.tag
+      description="oscache wrapper for one block" />
+
+  <jsp:directive.attribute name="flushparam"        type="java.lang.String"  />
+  <jsp:directive.attribute name="group"        type="java.lang.String"  required="true" />
+  <jsp:directive.attribute name="block"        type="org.mmbase.bridge.Node"  required="true" />
+  <jsp:directive.attribute name="blockposrel"        type="org.mmbase.bridge.Node"  required="true" />
+  <os:cache
+      refreshpolicyclass="${empty block.refreshpolicy ? 'org.mmbase.portal.refresh.Expires' : block.refreshpolicy}"
+      refreshpolicyparam="${empty block.refreshpolicy and empty block.refreshpolicyparam ? '3600' : block.refreshpolicyparam}"
+      refresh="${param[flushparam] eq blockposrel.number}"
+      scope="application"
+      key="${group}/${blockposrel}"
+      groups="${group}"
+      >
+    <c:catch var="e">
+      <jsp:text>&lt;!--</jsp:text><mm:time time="now" />:${group}/${blockposrel} <jsp:text>--&gt;</jsp:text>
+      <jsp:doBody />
+    </c:catch>
+    <c:if test="${! empty e}">
+      <mm:log>${e}</mm:log>
+      <os:usecached />
+    </c:if>
+  </os:cache>
+  <c:if test="${! empty e}">
+    <div class="error"><mm:write value="${e}" /></div>
+  </c:if>
+</jsp:root>

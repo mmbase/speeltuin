@@ -1,0 +1,36 @@
+<<<<<<< .mine
+version=2.73-1
+=======
+version=2.73
+>>>>>>> .r45734
+file=jquery.form.js
+
+.PHONY: clean
+
+
+jquery.form.war: $(file) build/mmbase/jquery/jquery.form.jspx
+	mkdir -p build/mmbase/jquery/
+	cp $(file) build/mmbase/jquery/
+	jar cf $@ -C build .
+
+
+$(file):
+	wget http://github.com/malsup/form/raw/master/jquery.form.js --no-check-certificate -O $(file)
+
+
+deploy: jquery.form.war
+	mvn deploy:deploy-file \
+	 -DgeneratePom.description='JQuery Form Plugin. See http://jquery.malsup.com/form/' -DgroupId=org.mmbase.jquery -DartifactId=jquery-form   \
+	 -Dversion=$(version) -Dpackaging=war \
+	-Dfile=jquery.form.war \
+	-Durl=scp://mmbase.org/home/tomcat/mmweb/maven2 -DrepositoryId=mmbase
+
+build/mmbase/jquery/jquery.form.jspx:
+	mkdir -p build/mmbase/jquery/
+	cp mmbase/jquery/jquery.form.jspx  $@
+
+
+clean:
+	rm -rf build
+	rm -rf jquery.form.war
+

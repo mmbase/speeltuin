@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/mwclient/!svn/ver/96/trunk/mwclient
+END
+compatibility.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/mwclient/!svn/ver/82/trunk/mwclient/compatibility.py
+END
+listing.py
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/mwclient/!svn/ver/92/trunk/mwclient/listing.py
+END
+errors.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/mwclient/!svn/ver/54/trunk/mwclient/errors.py
+END
+ex.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/mwclient/!svn/ver/43/trunk/mwclient/ex.py
+END
+page.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/mwclient/!svn/ver/91/trunk/mwclient/page.py
+END
+RELEASE-NOTES.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/mwclient/!svn/ver/96/trunk/mwclient/RELEASE-NOTES.txt
+END
+page_nowriteapi.py
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/mwclient/!svn/ver/71/trunk/mwclient/page_nowriteapi.py
+END
+client.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/mwclient/!svn/ver/96/trunk/mwclient/client.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/mwclient/!svn/ver/96/trunk/mwclient/__init__.py
+END
+http.py
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svnroot/mwclient/!svn/ver/84/trunk/mwclient/http.py
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/mwclient/!svn/ver/96/trunk/mwclient/README.txt
+END
+upload.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svnroot/mwclient/!svn/ver/71/trunk/mwclient/upload.py
+END
+REFERENCE.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/mwclient/!svn/ver/96/trunk/mwclient/REFERENCE.txt
+END

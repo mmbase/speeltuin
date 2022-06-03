@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component
+    name="statistics"
+    version="0.2"
+    xmlns="http://www.mmbase.org/xmlns/component"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mmbase.org/xmlns/component http://www.mmbase.org/xmlns/component.xsd">
+
+  <class name="org.mmbase.framework.BasicComponent" />
+  <description xml:lang="en">This component contains functionality to calculate average values and such</description>
+
+  <title xml:lang="nl">Statistiek</title>
+  <title xml:lang="en">Statistics</title>
+
+
+
+  <block name="statistics"
+         classification="mmbase.documentation"
+         mimetype="text/html">
+    <title xml:lang="en">Statistics</title>
+    <title xml:lang="nl">Statistiek</title>
+    <xi:include href="http://www.mmbase.org/components/docbook.head.xml" />
+    <body>
+      <class name="org.mmbase.framework.DocumentationRenderer">
+        <param name="project">speeltuin/mihxil</param>
+        <param name="module">statistics/documentation</param>
+        <param name="docbook">mmstatistics.xml</param>
+      </class>
+    </body>
+  </block>
+
+  <block name="statistics-taglib-reference-uncached"
+         mimetype="text/html">
+    <title xml:lang="en">Statistics Taglib - Reference (uncached)</title>
+    <title xml:lang="nl">Statistiek-taglib - Referentie (uncached)</title>
+    <body>
+      <class name="org.mmbase.framework.ConnectionRenderer">
+        <param name="url">http://scm.mmbase.org/view/*checkout*/speeltuin/mihxil/statistics/src/main/resources/META-INF/statistics.tld</param>
+        <param name="xslt">http://scm.mmbase.org/view/*checkout*/mmbase/trunk/applications/share/xslt/xml2block.xslt</param>
+        <!--
+        <param name="xslt">file:///home/michiel/mmbase/trunk/applications/share/xslt/xml2block.xslt</param>
+        -->
+      </class>
+    </body>
+  </block>
+  <block name="statistics-taglib-reference"
+         classification="mmbase.documentation"
+         mimetype="text/html">
+    <title xml:lang="en">Statistics Taglib - Reference</title>
+    <title xml:lang="nl">Statistiek-taglib - Referentie</title>
+    <body>
+      <class name="org.mmbase.framework.CachedRenderer">
+        <param name="wrapsBlock">statistics-taglib-reference-uncached</param>
+        <param name="includeRenderTime">xml-comments</param>
+      </class>
+    </body>
+  </block>
+
+  <block name="statistics-example"
+         classification="mmbase.examples"
+         mimetype="text/html">
+    <title xml:lang="en">Statistics - Example</title>
+    <title xml:lang="nl">Statistiek - Voorbeeld</title>
+    <body jsp="index.jspx" />
+  </block>
+
+
+
+</component>

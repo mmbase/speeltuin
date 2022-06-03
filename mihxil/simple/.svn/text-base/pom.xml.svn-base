@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.mmbase</groupId>
+    <artifactId>mmbase-parent</artifactId>
+    <version>1.9-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>simple-webapp</artifactId>
+  <packaging>war</packaging>
+  <name>MMBase Simple webapp</name>
+  <version>0.1-SNAPSHOT</version>
+  <description>
+    A straight forward simple website. With integrated editing, and wgetable.
+  </description>
+
+  <properties>
+    <my.postfix>${mmbase.version.postfix}</my.postfix>
+
+    <jdbcUrl>jdbc:hsqldb:file:data/mmbase</jdbcUrl>
+    <!-- E.g. use
+         -DjdbcUrl=jdbc:hsqldb:hsql://localhost/testb
+         to connect to a running hsql, e.g. needed when testing clustering
+    -->
+  </properties>
+
+  <build>
+    <defaultGoal>install</defaultGoal>
+    <plugins>
+      <plugin>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <configuration>
+          <jettyEnvXml>${basedir}/jetty-env.xml</jettyEnvXml>
+          <systemProperties>
+            <systemProperty>
+              <name>jdbcUrl</name>
+              <value>${jdbcUrl}</value>
+            </systemProperty>
+            <systemProperty>
+              <name>java.awt.headless</name>
+              <value>true</value>
+            </systemProperty>
+            <systemProperty>
+              <name>jetty.port</name>
+              <value>8083</value>
+            </systemProperty>
+          </systemProperties>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+
+    <dependency>
+      <groupId>org.mmbase</groupId>
+      <artifactId>mmbase</artifactId>
+      <version>${mmbase.version}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mmbase</groupId>
+      <artifactId>base-webapp</artifactId>
+      <version>1.9-servlet25-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.mmbase</groupId>
+      <artifactId>mmbase-resources</artifactId>
+      <version>${mmbase.version}</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.mmbase</groupId>
+      <artifactId>mmbase-searchrelate</artifactId>
+      <version>${mmbase.version}</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.mmbase</groupId>
+      <artifactId>mmbase-mynews</artifactId>
+      <version>${mmbase.version}</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.mmbase</groupId>
+      <artifactId>mmbase-email</artifactId>
+      <version>${mmbase.version}</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.mmbase</groupId>
+      <artifactId>mmbase-richtext</artifactId>
+      <version>${mmbase.version}</version>
+      <type>war</type>
+    </dependency>
+    <dependency>
+      <groupId>org.mmbase</groupId>
+      <artifactId>mmbase-richtext-content</artifactId>
+      <version>2.0-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+
+    <dependency>
+      <groupId>org.mmbase</groupId>
+      <artifactId>mmbase-portal</artifactId>
+      <version>0.4-SNAPSHOT</version>
+      <type>war</type>
+    </dependency>
+
+    <dependency>
+      <groupId>opensymphony</groupId>
+      <artifactId>oscache</artifactId>
+      <version>2.4</version>
+      <exclusions>
+        <exclusion>
+          <!-- provided by base-webapp -->
+          <groupId>log4j</groupId>
+          <artifactId>log4j</artifactId>
+        </exclusion>
+        <exclusion>
+          <!-- this is a bug in the oscache pom, if you ask me -->
+          <groupId>javax.servlet</groupId>
+          <artifactId>servlet-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>commons-lang</groupId>
+      <artifactId>commons-lang</artifactId>
+      <version>2.5</version>
+    </dependency>
+
+
+  </dependencies>
+
+  <pluginRepositories>
+
+  </pluginRepositories>
+
+</project>
+

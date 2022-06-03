@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/35464/speeltuin/ernst/mmbase-republisher/src/main/java/nl/vpro/mmbase/republisher/validator
+END
+DummyValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/35464/speeltuin/ernst/mmbase-republisher/src/main/java/nl/vpro/mmbase/republisher/validator/DummyValidator.java
+END
+DocumentValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/35464/speeltuin/ernst/mmbase-republisher/src/main/java/nl/vpro/mmbase/republisher/validator/DocumentValidator.java
+END
+OvalDocumentValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/35464/speeltuin/ernst/mmbase-republisher/src/main/java/nl/vpro/mmbase/republisher/validator/OvalDocumentValidator.java
+END

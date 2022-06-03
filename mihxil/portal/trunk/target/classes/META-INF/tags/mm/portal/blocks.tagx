@@ -1,0 +1,35 @@
+<jsp:root
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:mm="http://www.mmbase.org/mmbase-taglib-2.0"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    version="2.0"
+    >
+  <jsp:directive.tag
+      description="Produces a div, and takes the current node (_node), and determing the related 'componentblocks' (using 'blockposrel).
+                   For each found node then a div is produced, with the proper css classes to position them.
+                   In the body the variables 'block' and 'blockposrel' are produced, which are the two MMBase Nodes which are relevant.
+                   These blockposrel variable can typically be put into the portal:block tag."
+      />
+
+  <jsp:directive.variable name-given="block"       variable-class="org.mmbase.bridge.Node"
+                          description="The block object"/>
+  <jsp:directive.variable name-given="blockposrel" variable-class="org.mmbase.bridge.Node"
+                          description="The relation object which was followed to find this block. This contains for example the x and y fields"
+                          />
+  <mm:node id="page">
+    <div class="mm_portal_content">
+      <mm:listrelationscontainer type="componentblocks" role="blockposrel">
+        <mm:sortorder field="blockposrel.x" />
+        <mm:sortorder field="blockposrel.y" />
+        <mm:listrelations id="blockposrel">
+          <div class="block x${_node.x} y${_node.y} width${_node.width} height${_node.height}">
+            <mm:relatednode id="block" />
+            <mm:node node="page">
+              <jsp:doBody />
+            </mm:node>
+          </div>
+        </mm:listrelations>
+      </mm:listrelationscontainer>
+    </div>
+  </mm:node>
+</jsp:root>

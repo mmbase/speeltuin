@@ -1,0 +1,151 @@
+Listening for transport dt_socket at address: 4000
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective settings
+[WARNING] 'repositories.repository.layout' for 1_8 uses the unsupported value 'legacy', artifact resolution might fail. @ /Users/michiel/.m2/settings.xml
+[WARNING] 
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.mmbase:example-webservice-webapp:war:0.1-SNAPSHOT
+[WARNING] 'parent.relativePath' points at org.mmbase:webservice-assembly instead of org.mmbase:mmbase-parent, please verify your project structure @ line 6, column 11
+[WARNING] 'reporting.plugins.plugin.version' for org.apache.maven.plugins:maven-javadoc-plugin is missing.
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building MMBase Example WebService webapp 0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] >>> maven-jetty-plugin:6.1.19:run (default-cli) @ example-webservice-webapp >>>
+Downloading: http://repository.jboss.com/maven2/org/mmbase/mmbase-parent/2.0-SNAPSHOT/maven-metadata.xml
+[WARNING] Could not transfer metadata org.mmbase:mmbase-parent:2.0-SNAPSHOT/maven-metadata.xml from/to jboss (http://repository.jboss.com/maven2): Access denied to: http://repository.jboss.com/maven2/org/mmbase/mmbase-parent/2.0-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.jboss.com/maven2/org/mmbase/mmbase-application-parent/1.9-SNAPSHOT/maven-metadata.xml
+[WARNING] Could not transfer metadata org.mmbase:mmbase-application-parent:1.9-SNAPSHOT/maven-metadata.xml from/to jboss (http://repository.jboss.com/maven2): Access denied to: http://repository.jboss.com/maven2/org/mmbase/mmbase-application-parent/1.9-SNAPSHOT/maven-metadata.xml
+Downloading: http://repository.jboss.com/maven2/org/mmbase/mmbase-parent/1.9-SNAPSHOT/maven-metadata.xml
+[WARNING] Could not transfer metadata org.mmbase:mmbase-parent:1.9-SNAPSHOT/maven-metadata.xml from/to jboss (http://repository.jboss.com/maven2): Access denied to: http://repository.jboss.com/maven2/org/mmbase/mmbase-parent/1.9-SNAPSHOT/maven-metadata.xml
+[INFO] 
+[INFO] --- buildnumber-maven-plugin:1.0-beta-3:create (default) @ example-webservice-webapp ---
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp && svn --non-interactive info
+[INFO] Working directory: /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp
+[INFO] Storing buildNumber: 43988 at timestamp: 2011-06-26T13:51
+[INFO] 
+[INFO] --- maven-timestamp-plugin:0.1:create (default) @ example-webservice-webapp ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:resources (default-resources) @ example-webservice-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/java
+[INFO] Copying 1 resource
+[INFO] skip non existing resourceDirectory /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/resources-filtered
+[INFO] Copying 2 resources to org/mmbase/config
+[INFO] skip non existing resourceDirectory /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/generated/src/main/resources
+[INFO] skip non existing resourceDirectory /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/generated1/src/main/resources
+[INFO] 
+[INFO] --- maven-mmbase-plugin:2.0-SNAPSHOT:install-resources (copy-web-resources) @ example-webservice-webapp ---
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:compile (default-compile) @ example-webservice-webapp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-mmbase-plugin:2.0-SNAPSHOT:create-index-files (create-index-files) @ example-webservice-webapp ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.4.3:testResources (default-testResources) @ example-webservice-webapp ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/test/java
+[INFO] skip non existing resourceDirectory /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/test/resources
+[INFO] skip non existing resourceDirectory /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/test/java
+[INFO] skip non existing resourceDirectory /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/generated/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.3.2:testCompile (default-testCompile) @ example-webservice-webapp ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] <<< maven-jetty-plugin:6.1.19:run (default-cli) @ example-webservice-webapp <<<
+[INFO] 
+[INFO] --- maven-jetty-plugin:6.1.19:run (default-cli) @ example-webservice-webapp ---
+[INFO] Configuring Jetty for project: MMBase Example WebService webapp
+[INFO] Webapp source directory = /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp
+[INFO] Reload Mechanic: automatic
+[INFO]  jetty-env.xml = /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/jetty-env.xml
+[INFO] Classes = /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/classes
+[INFO] Added extra scan target:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/config
+[INFO] Context path = /example-webservice-webapp
+[INFO] Tmp directory =  determined at runtime
+[INFO] Web defaults = org/mortbay/jetty/webapp/webdefault.xml
+[INFO] Web overrides =  none
+[INFO] Adding overlay: jar:file:/Users/michiel/.m2/repository/org/mmbase/base-webapp/2.0-SNAPSHOT/base-webapp-2.0-SNAPSHOT.war!/
+[INFO] Adding overlay: jar:file:/Users/michiel/.m2/repository/org/mmbase/mmbase-webservice/0.1-SNAPSHOT/mmbase-webservice-0.1-SNAPSHOT.war!/
+[INFO] Adding overlay: jar:file:/Users/michiel/.m2/repository/org/mmbase/mmbase-cxf/0.1-SNAPSHOT/mmbase-cxf-0.1-SNAPSHOT.war!/
+[INFO] web.xml file = /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp/WEB-INF/web.xml
+[INFO] Webapp directory = /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp
+[INFO] Starting jetty 6.1.19 ...
+INFO 2011-06-26 13:51:55,767 Starting UrlFilter
+INFO 2011-06-26 13:51:56,110 Logging: org.mmbase.util.logging.log4j.Log4jImpl (log4j.xml).  Configured in jar:file:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-8940857634220540139.jar!/org/mmbase/config/log/log.xml
+INFO 2011-06-26 13:51:56,115 logging configurationfile : log4j.xml
+INFO 2011-06-26 13:51:56,116 using /log/ resolving in [nodes of type 0, {}, /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp/WEB-INF/config, ClassLoader /org/mmbase/config, ClassLoader /] for resolving log4j.xml -> file:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp/WEB-INF/config/log/log4j.xml
+13:51:56,189 INF 17188 kb org.mmbase.INIT info.98 - ===========================
+13:51:56,192 INF 17188 kb org.mmbase.INIT info.98 - MMBase logging initialized.
+13:51:56,192 INF 17188 kb org.mmbase.INIT info.98 - ===========================
+13:51:56,193 INF 17188 kb org.mmbase.INIT info.98 - java.version       : 1.6.0_24
+13:51:56,193 INF 17188 kb org.mmbase.INIT info.98 - user.dir          : /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp
+13:51:56,194 INF 17861 kb org.mmbase.INIT info.98 - configuration     : / resolving in [nodes of type 0, {}, /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp/WEB-INF/config, ClassLoader /org/mmbase/config, ClassLoader /]
+13:51:56,196 INF 17861 kb org.mmbase.INIT info.98 - webroot           : / resolving in [/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp, ServletResource /]
+13:51:56,198 INF 17861 kb org.mmbase.INIT info.98 - version           : MMBase 2.0.0.2011-06-22T19:02 (r45815)
+13:51:56,198 INF 17861 kb org.mmbase.INIT info.98 - total memory      : 528 MiB
+13:51:56,199 INF 17861 kb org.mmbase.INIT info.98 - free memory       : 511 MiB
+13:51:56,199 INF 18542 kb org.mmbase.INIT info.98 - Assertions are enabled
+13:51:56,200 INF 18542 kb org.mmbase.INIT info.98 - start time        : 26. juni 2011 13:51:55 CEST
+13:51:56,201 INF 18542 kb org.mmbase.INIT info.98 - mmbase.htmlroot   : /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp
+13:51:56,201 INF 18542 kb org.mmbase.INIT info.98 - context           : /example-webservice-webapp/
+13:51:56,202 INF 18542 kb org.mmbase.framework.FrameworkFilter info.98 - UrlFilter initialized
+13:51:56,265 INF 21931 kb org.mmbase.servlet.MMBaseServlet init.211 - Init of servlet version.
+13:51:56,298 INF 24040 kb org.mmbase.servlet.MMBaseServlet init.211 - Init of servlet MMWebService.
+[INFO] Started Jetty Server
+13:51:56,462 INF 29579 kb org.mmbase.module.Module loadModulesFromDisk.573 - In /modules/ resolving in [nodes of type 0, {}, /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/main/webapp/WEB-INF/config, ClassLoader /org/mmbase/config, ClassLoader /] the following module XML's were found [jdbc.xml, mmadmin.xml, mmbaseroot.xml]
+13:51:56,627 INF 34742 kb org.mmbase.module.Module loadInitParameters.341 - Put for mmbaseroot {basename=test, datasource-context=java:comp/env, database=hsqldb_csv, datadir=data, datasource=jdbc/MMBase}
+13:51:56,640 INF 35083 kb org.mmbase.module.Module startModules.433 - Starting module jdbc
+13:51:56,642 INF 35083 kb org.mmbase.module.Module startModules.433 - Starting module mmadmin
+13:51:56,642 INF 35083 kb org.mmbase.module.Module startModules.433 - Starting module mmbaseroot
+13:51:56,645 INF 35424 kb org.mmbase.util.MMBaseContext info.98 - MMBase data dir: /Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/data
+13:51:56,648 INF 35424 kb org.mmbase.INIT info.98 - MMBase Time zone   : Central European Time (it's now June 26, 2011 1:51:56 PM CEST)
+13:51:56,653 INF 35796 kb org.mmbase.INIT info.98 - MMBase Locale      : da
+13:51:58,265 WAR 30266 kb org.mmbase.framework.ComponentRepository readConfiguration.259 - Component file:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/classes/org/mmbase/config/components/webservices-exampels.xml is defined in resource with name webservices-exampels.xml but its name is 'webservices-examples'
+13:51:58,442 INF 42032 kb org.mmbase.webservice.WebServiceRepository readConfiguration.115 - Parsing jar:file:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-5929081103911536223.jar!/org/mmbase/config/webservices.xml
+13:51:59,412 INF 35315 kb org.mmbase.framework.ComponentRepository readConfiguration.294 - Found the following components [core, mmexamples, taglib, test, webservices, webservices-examples, x]
+13:51:59,413 INF 35663 kb org.mmbase.util.FileWatcher info.98 - Delay of []  (2000 ms) is smaller than the delay of the watching thread. Will not watch more often then once per 10000 ms. Set to 10000
+13:51:59,414 INF 35663 kb org.mmbase.webservice.WebServiceRepository readConfiguration.163 - Found list GET ComponentWebService:xmlindex(org.mmbase.webservice.WebService:public:allows)
+13:51:59,414 INF 35663 kb org.mmbase.webservice.WebServiceRepository readConfiguration.115 - Parsing jar:file:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-5797939685590508050.jar!/org/mmbase/config/webservices.xml
+13:51:59,488 INF 41182 kb org.mmbase.webservice.WebServiceRepository readConfiguration.163 - Found sayHi GET org.mmbase.webservice.AnyFunctionWebService@24c1f7dc
+13:51:59,488 INF 41182 kb org.mmbase.webservice.WebServiceRepository readConfiguration.115 - Parsing file:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/classes/org/mmbase/config/webservices.xml
+13:51:59,598 INF 13444 kb org.mmbase.webservice.WebServiceRepository readConfiguration.163 - Found password GET ComponentWebService:password(org.mmbase.webservice.WebService:public:allows)
+13:51:59,611 INF 13444 kb org.mmbase.webservice.WebServiceRepository readConfiguration.163 - Found password2 GET utils:generatePassword[java.lang.String template]
+13:51:59,612 INF 13444 kb org.mmbase.webservice.WebServiceRepository readConfiguration.163 - Found testaction GET utils:generatePassword[java.lang.String template]
+13:51:59,613 INF 13444 kb org.mmbase.util.FileWatcher info.98 - Delay of []  (2000 ms) is smaller than the delay of the watching thread. Will not watch more often then once per 10000 ms. Set to 10000
+13:51:59,622 INF 13627 kb mmbase.framework.basic.BasicFramework configure.154 - Configured with jar:file:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-7387505386676028555.jar!/org/mmbase/config/framework.xml class org.mmbase.framework.basic.BasicFramework BASIC: description: ChainedUrlConverter[/mmbase/]
+13:52:00,030 INF 27698 kb v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager.462 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge13p8g1kjm93twi84an|6c68bcef, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> org.hsqldb.jdbcDriver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge13p8g1kjm93twi84an|6c68bcef, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:hsqldb:file:data/hsqldb/didactor, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+13:52:01,532 INF 44433 kb org.mmbase.INIT info.98 - MMBase machine name used for clustering: 'belono.fritz.box/example-webservice-webapp/'
+13:52:01,533 INF 44433 kb org.mmbase.cache.CacheManager unRegister.311 - Clearing and unregistering all caches
+13:52:01,536 WAR 44433 kb org.mmbase.cache.CacheManager unRegister.343 - Didn't unregister all caches[org.mmbase:type=Caches]
+13:52:01,774 INF 17153 kb storage.implementation.database.DatabaseStorageManagerFactory getDocumentReader.352 - No database specified, using lookup.xml
+13:52:01,776 INF 17625 kb storage.implementation.database.DatabaseStorageManagerFactory getDocumentReader.386 - Configuration used for database storage: jar:file:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-7387505386676028555.jar!/org/mmbase/config/storage/databases/hsqldb_csv.xml
+13:52:02,091 INF 13457 kb mmbase.module.core.MMBase initializeStorage.1220 - Using class: 'org.mmbase.storage.implementation.database.DatabaseStorageManagerFactory'.
+13:52:02,685 INF 41354 kb mmbase.module.core.MMBase loadBuilders.858 - Loading builders: [core/daymarks.xml, core/insrel.xml, core/mmservers.xml, core/oalias.xml, core/object.xml, core/reldef.xml, core/syncnodes.xml, core/systemproperties.xml, core/typedef.xml, core/typerel.xml, core/versions.xml, properties.xml]
+13:52:03,606 INF 41101 kb storage.implementation.database.DatabaseStorageManagerFactory getDocumentReader.352 - No database specified, using lookup.xml
+13:52:03,608 INF 41650 kb storage.implementation.database.DatabaseStorageManagerFactory getDocumentReader.386 - Configuration used for database storage: jar:file:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-7387505386676028555.jar!/org/mmbase/config/storage/databases/hsqldb_csv.xml
+13:52:03,865 INF 47356 kb mmbase.module.core.MMObjectBuilder createIfNotExists.542 - Creating table for builder clusternodes
+13:52:03,871 INF 47356 kb org.mmbase.util.FileWatcher info.98 - Delay of []  (2000 ms) is smaller than the delay of the watching thread. Will not watch more often then once per 10000 ms. Set to 10000
+13:52:03,871 INF 47900 kb org.mmbase.util.FileWatcher info.98 - Delay of []  (2000 ms) is smaller than the delay of the watching thread. Will not watch more often then once per 10000 ms. Set to 10000
+13:52:04,018 INF 50268 kb storage.implementation.database.DatabaseStorageManagerFactory getDocumentReader.352 - No database specified, using lookup.xml
+13:52:04,045 INF 15445 kb storage.implementation.database.DatabaseStorageManagerFactory getDocumentReader.386 - Configuration used for database storage: jar:file:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-7387505386676028555.jar!/org/mmbase/config/storage/databases/hsqldb_csv.xml
+13:52:04,156 INF 18988 kb org.mmbase.security.MMBaseCopConfig <init>.98 - using: 'jar:file:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-7387505386676028555.jar!/org/mmbase/config/security/security.xml' as configuration file for security
+13:52:04,344 INF 22548 kb security.implementation.context.ContextAuthentication load.105 - loaded module with the name: 'anonymous' with class: org.mmbase.security.implementation.context.AnonymousLogin
+13:52:04,345 INF 22548 kb security.implementation.context.ContextAuthentication load.105 - loaded module with the name: 'name/password' with class: org.mmbase.security.implementation.context.PasswordLogin
+13:52:04,346 INF 23138 kb security.implementation.context.ContextAuthentication load.105 - loaded module with the name: 'class' with class: org.mmbase.security.implementation.context.ClassLogin
+13:52:04,468 INF 27862 kb storage.implementation.database.DatabaseStorageManagerFactory getDocumentReader.352 - No database specified, using lookup.xml
+13:52:04,470 INF 27862 kb storage.implementation.database.DatabaseStorageManagerFactory getDocumentReader.386 - Configuration used for database storage: jar:file:/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/work/lib/Jetty-7387505386676028555.jar!/org/mmbase/config/storage/databases/hsqldb_csv.xml
+13:52:04,561 INF 31405 kb org.mmbase.INIT info.98 - MMBase is up and running
+13:52:04,568 INF 31927 kb org.mmbase.servlet.MMBaseServlet setMMBase.164 - MMBase servlets are ready to receive requests, started in 0 min 8 sec.
+13:52:05,846 INF 46612 kb mmbase.core.event.NodeEvent configure.136 - Reading org.mmbase.util.xml.UtilReader@2bbe71fd utils/nodeevents.xml
+13:52:05,846 INF 46612 kb mmbase.core.event.NodeEvent configure.147 - Setting unacceptable values types for NodeEvents to [class [B]
+13:52:05,847 INF 46612 kb mmbase.core.event.NodeEvent configure.160 - Setting unacceptable values types for NodeEvents to [interface java.io.Serializable]

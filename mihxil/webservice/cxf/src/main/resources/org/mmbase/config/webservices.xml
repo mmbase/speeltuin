@@ -1,0 +1,11 @@
+<webservices
+    xmlns="http://www.mmbase.org/xmlns/webservices"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mmbase.org/xmlns/webservices
+                        http://www.mmbase.org/xmlns/webservices.xsd">
+
+  <webservice type="GET"
+              name="sayHi" class="demo.spring.HelloWorldImpl">
+  </webservice>
+
+</webservices>

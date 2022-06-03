@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/!svn/ver/35880/speeltuin/nightly
+END
+build-stable.sh
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/34906/speeltuin/nightly/build-stable.sh
+END
+maven1.sh
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/35880/speeltuin/nightly/maven1.sh
+END
+copy-artifacts.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/34607/speeltuin/nightly/copy-artifacts.sh
+END
+env.sh
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/!svn/ver/34906/speeltuin/nightly/env.sh
+END
+maven2.sh
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/35880/speeltuin/nightly/maven2.sh
+END
+version-stable.sh
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/!svn/ver/34607/speeltuin/nightly/version-stable.sh
+END
+build.sh
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/35767/speeltuin/nightly/build.sh
+END
+mail-results.sh
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/35880/speeltuin/nightly/mail-results.sh
+END
+dynamicdate.sh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/34906/speeltuin/nightly/dynamicdate.sh
+END
+tests.sh
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/!svn/ver/35880/speeltuin/nightly/tests.sh
+END
+build-maven.sh
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/34607/speeltuin/nightly/build-maven.sh
+END
+cvs-stable.sh
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/34607/speeltuin/nightly/cvs-stable.sh
+END
+kupu.sh
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/!svn/ver/34607/speeltuin/nightly/kupu.sh
+END
+version.sh
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/34906/speeltuin/nightly/version.sh
+END

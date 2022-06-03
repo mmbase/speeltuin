@@ -1,0 +1,7 @@
+58,22,system,org.mmbase.resources.transparentpixel,,57
+72,22,default,default.mags,,71
+75,22,default,nondefault.mags,,74
+78,22,default,a.news.article,,77
+79,22,default,anewsarticle,,77
+90,22,default,example.codings,,89
+103,22,default,test.transparency,,102

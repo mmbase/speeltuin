@@ -1,0 +1,12 @@
+8,4,system,versions,builder,0,mmbase.org
+9,4,system,object,builder,0,mmbase.org
+13,4,system,daymarks,builder,0,mmbase.org
+15,4,system,oalias,builder,0,mmbase.org
+17,4,system,mmservers,builder,0,mmbase.org
+18,4,system,typedef,builder,0,mmbase.org
+20,4,system,systemproperties,builder,1,mmbase.org
+21,4,system,typerel,builder,0,mmbase.org
+22,4,system,reldef,builder,0,mmbase.org
+23,4,system,insrel,builder,0,mmbase.org
+25,4,system,syncnodes,builder,0,mmbase.org
+27,4,system,Basics,application,1,mmbase.org

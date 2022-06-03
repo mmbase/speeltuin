@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/34607/speeltuin/ernst/vpro-wizards/resources/org/mmbase/applications/vprowizards/resources
+END
+messages.properties
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/34607/speeltuin/ernst/vpro-wizards/resources/org/mmbase/applications/vprowizards/resources/messages.properties
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/34607/speeltuin/ernst/vpro-wizards/resources/org/mmbase/applications/vprowizards/resources/applicationContext.xml
+END
+vpro-wizards-servlet.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/34607/speeltuin/ernst/vpro-wizards/resources/org/mmbase/applications/vprowizards/resources/vpro-wizards-servlet.xml
+END
+messages_NL.properties
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/34607/speeltuin/ernst/vpro-wizards/resources/org/mmbase/applications/vprowizards/resources/messages_NL.properties
+END

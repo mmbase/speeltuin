@@ -1,0 +1,31 @@
+/*
+
+This software is OSI Certified Open Source Software.
+OSI Certified is a certification mark of the Open Source Initiative.
+
+The license (Mozilla version 1.0) can be read at the MMBase site.
+See http://www.MMBase.org/license
+
+*/
+
+package org.mmbase.bridge.forms;
+
+import org.mmbase.bridge.*;
+import org.mmbase.bridge.util.*;
+import java.util.*;
+
+/**
+ * A test/example form that deals with nodes of the type 'bb'.
+ *
+ * @author Michiel Meeuwissen
+ * @version $Id: BBNode.java 42130 2010-05-10 14:51:21Z michiel $
+ */
+public class BBNode extends FormNode {
+    public BBNode(Node n, Form f) throws NotWrapped {
+        super(n, f);
+        if (! n.getNodeManager().getName().equals("bb")) {
+            throw new NotWrapped("Node " + n + " is not bb but " + n.getNodeManager().getName());
+        }
+    }
+}
+

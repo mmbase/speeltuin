@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/34607/speeltuin/applications/kbase/template/jsp/kbase/parts
+END
+basics.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/34607/speeltuin/applications/kbase/template/jsp/kbase/parts/basics.jsp
+END
+httpHeadIncludes.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/34607/speeltuin/applications/kbase/template/jsp/kbase/parts/httpHeadIncludes.jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/34607/speeltuin/applications/kbase/template/jsp/kbase/parts/login.jsp
+END
+showquestion.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/34607/speeltuin/applications/kbase/template/jsp/kbase/parts/showquestion.jsp
+END
+kbasetoxml.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/34607/speeltuin/applications/kbase/template/jsp/kbase/parts/kbasetoxml.jsp
+END
+logout.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/34607/speeltuin/applications/kbase/template/jsp/kbase/parts/logout.jsp
+END
+headers.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/34607/speeltuin/applications/kbase/template/jsp/kbase/parts/headers.jsp
+END
+editpart.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/34607/speeltuin/applications/kbase/template/jsp/kbase/parts/editpart.jsp
+END
+addpart.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/34607/speeltuin/applications/kbase/template/jsp/kbase/parts/addpart.jsp
+END

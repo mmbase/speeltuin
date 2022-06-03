@@ -1,0 +1,51 @@
+<jsp:root
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:mm="http://www.mmbase.org/mmbase-taglib-2.0"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    version="2.0"
+    >
+  <jsp:directive.tag
+      description="" />
+
+  <jsp:directive.attribute
+      name="date"
+      description="the date for which the current page object must be calculated. Defaults to 'now'. For possible syntaxes see:
+                   http://www.mmbase.org/api/org/mmbase/util/DynamicDate.html"
+      />
+  <jsp:directive.attribute
+      name="online"
+      type="java.lang.Boolean"
+      description="Whether or not to only list online pages. Defaults to true."
+      />
+  <jsp:directive.attribute fragment="true" name="constraints" />
+
+
+  <c:choose>
+    <c:when test="${empty date}">
+      <mm:time id="now" time="now" write="false" />
+    </c:when>
+    <c:otherwise>
+      <mm:time id="now" time="${date}" write="false" />
+    </c:otherwise>
+  </c:choose>
+  <c:choose>
+    <c:when test="${empty _node}">
+      <mm:listnodescontainer type="pages" id="container" />
+    </c:when>
+    <c:otherwise>
+      <mm:relatednodescontainer type="pages"  id="container" />
+    </c:otherwise>
+  </c:choose>
+  <mm:listnodescontainer referid="container">
+    <c:if test="${empty online or online}">
+      <mm:constraint field="online"  operator="lt" value="${now}" />
+      <mm:constraint field="offline" operator="gt" value="${now}" />
+      <mm:constraint field="show"    value="true" />
+    </c:if>
+    <mm:sortorder field="online" direction="down" /> <!-- show the one which went online most recently -->
+    <jsp:invoke fragment="constraints" />
+    <mm:listnodes>
+      <jsp:doBody />
+    </mm:listnodes>
+  </mm:listnodescontainer>
+</jsp:root>

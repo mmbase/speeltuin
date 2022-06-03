@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/!svn/ver/34607/speeltuin/mihxil/principles
+END
+CODE_CONVENTIONS
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/34607/speeltuin/mihxil/principles/CODE_CONVENTIONS
+END
+DEPENDENCIES
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/!svn/ver/34607/speeltuin/mihxil/principles/DEPENDENCIES
+END
+USE_THE_BRIDGE
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/34607/speeltuin/mihxil/principles/USE_THE_BRIDGE
+END
+DATABASE_INDEPENDENCY
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/34607/speeltuin/mihxil/principles/DATABASE_INDEPENDENCY
+END
+ASSUME_WEBAPP
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/!svn/ver/34607/speeltuin/mihxil/principles/ASSUME_WEBAPP
+END

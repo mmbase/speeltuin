@@ -1,0 +1,21 @@
+K 26
+svn:wc:ra_dav:activity-url
+V 10
+/!svn/act/
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/42410/speeltuin/mihxil/portal/trunk
+END
+pom.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/41642/speeltuin/mihxil/portal/trunk/pom.xml
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/41192/speeltuin/mihxil/portal/trunk/Makefile
+END

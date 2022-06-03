@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/34607/speeltuin/dbsq/test/src/org/mmbase/storage/search/implementation/database/vts
+END
+XmlVtsIndicesReaderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/34607/speeltuin/dbsq/test/src/org/mmbase/storage/search/implementation/database/vts/XmlVtsIndicesReaderTest.java
+END
+VtsIndexCreatorTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/34607/speeltuin/dbsq/test/src/org/mmbase/storage/search/implementation/database/vts/VtsIndexCreatorTest.java
+END
+VtsSuite.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/34607/speeltuin/dbsq/test/src/org/mmbase/storage/search/implementation/database/vts/VtsSuite.java
+END
+VtsSqlHandlerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/34607/speeltuin/dbsq/test/src/org/mmbase/storage/search/implementation/database/vts/VtsSqlHandlerTest.java
+END

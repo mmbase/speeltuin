@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nightly
+Build-Jdk: 1.5.0_11
+url: http://www.mmbase.org/mm2/mmbase-parent/mmbase-application-parent
+ /mmbase-resources
+
+Name: org/mmbase
+Build-Date: 2009-12-11T05:22
+Comment: MMBase. MMBase Resources (mmbase-resources).
+Description: This contains images, attachments, flashobjects, urls nod
+ e types, and the associated code to deal
+     with them. This application would be installed nearly always.
+Distribution: 1.9-SNAPSHOT
+SCM-Revision: 40220
+Vendor: MMBase Community
+Version: 1.9-SNAPSHOT.2009-12-11T05:22
+

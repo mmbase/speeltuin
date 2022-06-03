@@ -1,0 +1,63 @@
+/*
+
+This software is OSI Certified Open Source Software.
+OSI Certified is a certification mark of the Open Source Initiative.
+
+The license (Mozilla version 1.0) can be read at the MMBase site.
+See http://www.MMBase.org/license
+
+*/
+
+package org.mmbase.bridge.forms;
+
+import org.mmbase.bridge.*;
+import org.mmbase.bridge.util.*;
+
+import java.util.*;
+import java.lang.reflect.*;
+
+/**
+ * You can also only specify the Node implementation in the 'builder' xml, it will then by {@link
+ * FormsCloud} be wrapped into an instance of this class.
+ *
+ * @author Michiel Meeuwissen
+ * @version $Id$
+ */
+public class NodeWrapperForm extends Form  {
+
+    private final Class<? extends Node> nodeWrapperImplementation;
+
+    public NodeWrapperForm(FormsCloud cloud, NodeManagerDescription desc, Class<? extends Node> nodeWrapperImplementation) {
+        super(cloud, desc);
+        this.nodeWrapperImplementation = nodeWrapperImplementation;
+    }
+
+    @Override
+    public Node getNode(int number) {
+        if (vcloud.wrapped.hasNode(number)) {
+            Node n = vcloud.wrapped.getNode(number);
+            try {
+                Constructor<? extends Node> constructor = nodeWrapperImplementation.getConstructor(Node.class, Form.class);
+                Node node = constructor.newInstance(n, this);
+                return node;
+            } catch (NoSuchMethodException nsme) {
+                throw new BridgeException(nsme);
+            } catch (InstantiationException ie) {
+                throw new BridgeException(ie);
+            } catch (IllegalAccessException iae) {
+                throw new BridgeException(iae);
+            } catch (InvocationTargetException ite) {
+                Throwable  cause = ite.getCause();
+                if (cause instanceof NotWrapped) {
+                    return null;
+                } else {
+                    throw new BridgeException(ite);
+                }
+            }
+        }
+        return null;
+    }
+
+
+}
+

@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application
+END
+DataSetElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/DataSetElement.java
+END
+FileUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/FileUtils.java
+END
+RemoteProviderManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/RemoteProviderManager.java
+END
+Component.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/Component.java
+END
+Application.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/Application.java
+END
+AvailableApplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/AvailableApplication.java
+END
+RemoteProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/RemoteProvider.java
+END
+DataSetComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/DataSetComponent.java
+END
+XMLContextDepthWriterII.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/XMLContextDepthWriterII.java
+END
+ElementInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/ElementInterface.java
+END
+communicatie.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/communicatie.txt
+END
+CloudLayoutElementWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/CloudLayoutElementWriter.java
+END
+DisplayElementWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/DisplayElementWriter.java
+END
+ComponentElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/ComponentElement.java
+END
+XMLContextDepthReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/XMLContextDepthReader.java
+END
+CloudLayoutElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/CloudLayoutElement.java
+END
+MD5Diff.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/MD5Diff.java
+END
+DisplayElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/DisplayElement.java
+END
+InstallationException.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/InstallationException.java
+END
+ApplicationTaskManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/ApplicationTaskManager.java
+END
+NodeWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/NodeWriter.java
+END
+ComponentInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/ComponentInterface.java
+END
+MD5.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/MD5.java
+END
+ApplicationTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/ApplicationTask.java
+END
+ApplicationConfigWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/ApplicationConfigWriter.java
+END
+CloudLayoutComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/CloudLayoutComponent.java
+END
+DisplayComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/DisplayComponent.java
+END
+Provider.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/Provider.java
+END
+DataSetElementWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/DataSetElementWriter.java
+END
+ApplicationManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/34607/speeltuin/apps2/org/mmbase/application/ApplicationManager.java
+END

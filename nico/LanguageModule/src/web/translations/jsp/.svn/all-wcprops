@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/34607/speeltuin/nico/LanguageModule/src/web/translations/jsp
+END
+login.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/34607/speeltuin/nico/LanguageModule/src/web/translations/jsp/login.jsp
+END
+list.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/34607/speeltuin/nico/LanguageModule/src/web/translations/jsp/list.jsp
+END
+translate.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/34607/speeltuin/nico/LanguageModule/src/web/translations/jsp/translate.jsp
+END
+exception.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/34607/speeltuin/nico/LanguageModule/src/web/translations/jsp/exception.jsp
+END
+process.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/34607/speeltuin/nico/LanguageModule/src/web/translations/jsp/process.jsp
+END

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<component
+    name="portal"
+    version="1"
+    xmlns="http://www.mmbase.org/xmlns/component"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mmbase.org/xmlns/component http://www.mmbase.org/xmlns/component.xsd">
+
+  <class name="org.mmbase.framework.BasicComponent" />
+
+  <dependency component="core" version="9" />
+  <dependency component="taglib" version="2" />
+
+  <block name="portal-documentation"
+         classification="mmbase.documentation"
+         mimetype="text/html">
+    <title xml:lang="en">Portal</title>
+    <title xml:lang="nl">Portal</title>
+    <xi:include href="http://www.mmbase.org/components/docbook.head.xml" />
+    <body>
+      <class name="org.mmbase.framework.DocumentationRenderer">
+        <param name="docbook">index.xml</param>
+        <param name="project">speeltuin/mihxil</param>
+        <param name="module">portal/trunk/documentation</param>
+        <param name="includeRenderTime">xml-comments</param>
+      </class>
+    </body>
+  </block>
+
+  <block name="portal-taglib"
+         classification="mmbase.documentation"
+         mimetype="text/html">
+    <title xml:lang="nl">mm-portal:documentatie</title>
+    <title xml:lang="en">mm-portal:documentation</title>
+    <body>
+      <class name="org.mmbase.framework.IFrameRenderer">
+        <param name="url">http://www.mmbase.org/tags/mm/portal/mm-portal/tld-summary.html</param>
+      </class>
+    </body>
+  </block>
+
+
+</component>

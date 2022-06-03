@@ -1,0 +1,246 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>MMBase 2</title>
+    <script type="text/javascript" src="../common/jquery.js" />
+    <script type="text/javascript" src="../common/my.js" />
+    <link rel="stylesheet" href="../common/my.css" type="text/css" />
+  </head>
+  <body>
+    <div id="intro">
+      <h1>MMBase 2.0</h1>
+
+      <h2><a href="#intro">Introduction</a></h2>
+      <div>
+        <ul>
+          <li>1.8, 1.9, 1.10?</li>
+          <li>'Core 2'. Implementation of bridge interfaces by core classes. MMBase 3.0?</li>
+          <li>Servlet 2.5 (JSP 2.1, JSTL 1.2, Tomcat 6)</li>
+          <li>Java 6</li>
+        </ul>
+        <p>XS4All sponsoring. Server maintanance. Https certificate.</p>
+      </div>
+    </div>
+    <div id="services">
+      <h2><a href="#services">MMBase as Service and/or part of something bigger</a></h2>
+      <div>
+        <ul>
+          <li>Portlets. CMSContainer</li>
+          <li>WSDL?</li>
+          <li>Object mapping generation and type safety. Annotations, proxies, what not. </li>
+        </ul>
+      </div>
+    </div>
+    <div id="transactions">
+      <h2><a href="#transactions">Transactions</a></h2>
+      <div>
+        <ul>
+          <li>Simpler, more object oriented reimplementation. The current implementation is not bad, but it is just a bit hard to understand. Moving code around and encapsulating it in a simple interface would do a lot of good.</li>
+          <li>Database transactions. </li>
+          <li>Optimistic vs perssimistic locking</li>
+          <li>Editwizard transactions</li>
+          <li>Bridge vs Core transactions</li>
+
+          <li>Locking and Clustering</li>
+        </ul>
+      </div>
+    </div>
+    <div id="dbsq">
+      <h2><a href="#dbsq">Search Query improvements</a></h2>
+      <div>
+        <ul>
+          <li>
+            Bulk delete.
+            <pre><![CDATA[
+<mm:listnodescontainer type="news">
+  <mm:constraint ... />
+  <mm:bulkdelete />
+</mm:listnodescontainer>]]></pre>
+            <pre><![CDATA[
+NodeQuery q = nodeManager.createQuery();
+...
+nodeManager.delete(q);
+            ]]>
+            </pre>
+          </li>
+          <li>Bulk update
+          <pre><![CDATA[
+<mm:listnodescontainer type="news">
+  <mm:constraint ... />
+  <mm:bulkupdate>
+     <mm:setfield name="title">...</mm:setfield>
+  </mm:bulkupdate>
+</mm:listnodescontainer>]]></pre>
+          <pre><![CDATA[
+NodeQuery q = nodeManager.createQuery();
+...
+
+Node node = new VirtualNode(nodeManager);
+node.setStringValue("title", "...");
+
+nodeManager.update(q, node);
+          ]]></pre>
+          </li>
+          <li>
+            Outer joins
+            <pre><![CDATA[<mm:listcontainer path="news,people?">...]]></pre>
+          </li>
+          <li>
+            Relationless joins
+            <pre><![CDATA[<mm:listcontainer path="news[author=number]people?">...]]></pre>
+          </li>
+          <li>More complex function constraints</li>
+          <li>Better support for aggregated queries
+          <pre><![CDATA[
+max = nodeManager.aggregate(q, AggregatedField.AGGREGATION_TYPE_MAX);
+          ]]></pre>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="framework">
+      <h2><a href="#framework">Framework</a></h2>
+      <div>
+        <ul>
+          <li>Actual use</li>
+          <li>More Web 2.0</li>
+          <li>Portlet Specification (JSR 286) (web 2.0, inter portlet communication)</li>
+          <li>Framework / Portlet Implementation. Shipping portlet-api.jar?</li>
+        </ul>
+      </div>
+    </div>
+    <div id="datatypes">
+      <h2><a href="#datatypes">Datatypes</a></h2>
+      <div>
+        <ul>
+          <li>DataType <em>Handlers</em> (1.9.1)
+          <pre><![CDATA[
+  <datatype id="string">
+    <name xml:lang="en">Text</name>
+    <name xml:lang="nl">Tekst</name>
+    <description xml:lang="en">
+      String fields contain text.
+    </description>
+    <class name="org.mmbase.datatypes.StringDataType" />
+    <handler mimetype="text/html,application/xml+xhtml" name="org.mmbase.datatypes.handlers.html.StringHandler" />
+    <handler mimetype="application/swing"               name="org.mmbase.datatypes.handlers.swing.StringHandler" />
+    ]]>
+          </pre>
+          <pre><![CDATA[
+public interface Handler<C> extends java.io.Serializable {
+
+
+    /**
+     * Produces an form input field for the given Node, and Field.
+     * @param search if true, then a search field is produced.
+     */
+    C input(Request request, Node node, Field field, boolean search);
+
+    /**
+     * Checks the user input, and invalidates the request, if this user input was invalid.
+     * @param errors If <code>true</code> then report the errors, otherwise the return value can
+     * remain empty.
+     */
+    C check(Request request, Node node, Field field, boolean errors);
+
+    /**
+     * Sets the user's input into the field of the node
+     */
+    boolean set(Request request, Node node, Field field);
+
+    /**
+     * Uses the user's input to create a constraint for the given query
+     */
+    Constraint search(Request request, Field field, Query query);
+
+}
+          ]]>
+          </pre>
+          <p>Availabe in taglib as 'typehandler' for a long time. But the generalization, directly linked with the datatype is new!</p>
+          </li>
+          <li>
+            Javascript Validation (1.8.7). Using the datatype's meta data  to set up AJAX-based content validation. Works pretty well, but can be improved on. E.g. does not work so well yet in combination with
+            the <![CDATA[<mm:datatype />]]> tag.
+          </li>
+          <li>mm:input, mm:errors, mm:useinput (vs mm:fieldinfo). Form-generations now happens with the classic 'mm:fieldinfo' tag. But this does not look very intuitively clear.
+          <pre><![CDATA[
+<mm:form>
+   <mm:node>
+     <mm:fieldlist type="edit">
+       <mm:fieldinfo type="guiname" />
+       <mm:fieldinfo type="input" />
+       <mm:fieldinfo type="errors" />
+      </mm:fieldlist>
+   </mm:node>
+   <input type="submit" name="submit" />
+   <mm:import externid="submit" />
+   <mm:present referid="submit">
+     <mm:valid>
+       <mm:commit />
+       Saved!
+     </mm:valid>
+     <mm:valid inverse="true">
+       Form not valid!
+     </mm:valid>
+   </mm:present>
+</mm:form>]]>
+          </pre>
+          <p>Perhaps can be improved on. Something like</p>
+          <pre><![CDATA[
+<mm:form>
+   <mm:node>
+     <mm:fieldlist type="edit">
+        <mm:label />
+        <mm:input  />
+        <mm:errors max="1">
+          <span class="error"><mm:write /></span>
+        </mm:errors>
+     </mm:fieldlist>
+   </mm:node>
+   <mm:submit />
+   <mm:onsubmit>
+     <mm:valid>
+       <mm:commit />
+     </mm:valid>
+   </mm:onsubmit>
+</mm:form>]]>
+          </pre>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="virtualbuilders">
+      <h2><a href="#virtualbuilders">Virtual Builders</a></h2>
+      <div>
+        <ul>
+          <li>Using virtual fields and DataType.Handlers it is possible to display things in generic editors which were normally handled by e.g. Editwizards</li>
+          <li>An edit task can be described as a list of (virtual fields + datatypes)</li>
+          <li>A Builder is a list of fields too. Hence 'virtual builder'</li>
+        </ul>
+      </div>
+    </div>
+    <!--
+    <div id="annotations">
+      <h2><a href="#annotation">More annotation driven configuration</a></h2>
+      <div>
+      </div>
+    </div>
+    -->
+    <div id="thanks">
+      <h2><a href="#thanks">Thanks</a></h2>
+      <div>
+        <p>Michiel.Meeuwissen@gmail.moc</p>
+        <p><a href="http://www.dynasol.nl">www.dynasol.nl</a></p>
+        <p><a href="http://www.mmbase.org/contact">www.mmbase.org/contact</a></p>
+        <p><a href="http://www.mmbase.org/jira">www.mmbase.org/jira</a></p>
+        <p>mihxil @ #mmbase @ SlashNet</p>
+        <p>2009-05-14</p>
+        <p>$URL: https://scm.mmbase.org/speeltuin/mihxil/presentations/2009-05-14/2.xhtml $</p>
+      </div>
+    </div>
+    <div id="filler">
+
+    </div>
+  </body>
+</html>

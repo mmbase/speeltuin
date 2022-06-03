@@ -1,0 +1,52 @@
+/*
+
+This software is OSI Certified Open Source Software.
+OSI Certified is a certification mark of the Open Source Initiative.
+
+The license (Mozilla version 1.0) can be read at the MMBase site.
+See http://www.MMBase.org/license
+
+*/
+package org.mmbase.webservice;
+
+import javax.xml.stream.*;
+import org.mmbase.security.Action;
+import org.mmbase.util.LocalizedString;
+import org.mmbase.util.functions.*;
+
+/**
+ * An abstract web service only leaves {@link #serve} and perhaps {@link #getParameterDefinition}
+ * (if the web service needs parameter) to be implemented.
+ *
+ * @author Michiel Meeuwissen
+ * @version $Id$
+ */
+public abstract class  AbstractWebService implements WebService {
+
+    protected final LocalizedString description = new LocalizedString("webservice");
+
+    Action action = PUBLIC;
+
+    public Action getAction() {
+        return action;
+    }
+    public void setAction(Action a) {
+        action = a;
+    }
+
+
+    public abstract void serve(XMLStreamWriter writer, Parameters params) throws WebServiceException, XMLStreamException;
+
+    public final Parameters createParameters() {
+        return new Parameters(getParameterDefinition());
+    }
+
+    public Parameter[] getParameterDefinition() {
+        return Parameter.EMPTY;
+    }
+
+    public LocalizedString getDescription() {
+        return description;
+    }
+
+}

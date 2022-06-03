@@ -1,0 +1,76 @@
+<mm:content
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:mm-sr="http://www.mmbase.org/tags/mm/searchrelate"
+    xmlns:mm-srt="urn:jsptagdir:/WEB-INF/tags/mm/searchrelate"
+    xmlns:mm="http://www.mmbase.org/mmbase-taglib-2.0"
+    expires="0" type="application/xhtml+xml"
+    language="client" postprocessor="none">
+
+  <mm:cloud rank="basic user">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="${requestScope['javax.servlet.jsp.jstl.fmt.locale.request']}">
+
+      <head>
+        <mm:link page="/mmbase/searchrelate/page.css.jsp">
+          <link rel="stylesheet" href="${_}" type="text/css" />
+        </mm:link>
+      </head>
+      <body class="home">
+        <mm:import externid="clone" />
+        <mm:present referid="clone">
+          <mm:node number="${clone}">
+            <mm:nodefunction id="newnode" name="clone" />
+          </mm:node>
+          <p>Created node ${newnode}</p>
+        </mm:present>
+
+
+        <table>
+          <mm:listnodes type="pages">
+            <tr>
+              <td>
+                <mm:link page="page.jspx" referids="_node@node">
+                  <a href="${_}">
+                    <mm:nodeinfo type="gui" />
+                  </a>
+                </mm:link>
+              </td>
+              <td>
+                <mm:field name="online"><mm:fieldinfo type="guivalue" /></mm:field>
+              </td>
+              <td>
+                <mm:field name="offline"><mm:fieldinfo type="guivalue" /></mm:field>
+              </td>
+              <td>
+                <mm:link referids="_node@clone">
+                  <a href="${_}">Clone</a>
+                </mm:link>
+              </td>
+            </tr>
+          </mm:listnodes>
+        </table>
+        <mm-srt:search type="pages" create="true" />
+
+        <mm:link page="/page.jspx" id="page" write="false" />
+        <script type="text/javascript">
+          $(document).bind("mmsrRelate", function (e, tr, relater) {
+            document.location = "${page}?node=" + relater.getNumber(tr);
+          });
+        </script>
+        <mm:link page="vpro/">
+          <a href="${_}">VPRO</a>
+        </mm:link>
+
+
+
+        <mm:link page="/mmbase/components/core/model.svg.jsp">
+          <mm:param name="nodemanager">news</mm:param>
+          <mm:param name="maxdistance">3</mm:param>
+          <object data="${_}" type="image/svg+xml" />
+        </mm:link>
+
+
+
+      </body>
+    </html>
+  </mm:cloud>
+</mm:content>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/providerhandlers
+END
+PackageDiscovery.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/providerhandlers/PackageDiscovery.java
+END
+DiskProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/providerhandlers/DiskProvider.java
+END
+ProviderFileWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/providerhandlers/ProviderFileWriter.java
+END
+HttpProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/providerhandlers/HttpProvider.java
+END
+ProviderInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/providerhandlers/ProviderInterface.java
+END
+BasicProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/providerhandlers/BasicProvider.java
+END

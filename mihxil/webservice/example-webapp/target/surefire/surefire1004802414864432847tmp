@@ -1,0 +1,27 @@
+#surefire
+#Sun Jun 26 13:15:09 CEST 2011
+testClassesDirectory=/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/test-classes
+classPathUrl.3=/Users/michiel/.m2/repository/hsqldb/hsqldb/1.8.0.7/hsqldb-1.8.0.7.jar
+classPathUrl.2=/Users/michiel/.m2/repository/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar
+useManifestOnlyJar=true
+classPathUrl.1=/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/classes
+reportsDirectory=/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/surefire-reports
+classPathUrl.0=/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/test-classes
+dirscanner.0=directoryScannerOptions
+providerConfiguration=org.apache.maven.surefire.junit.JUnit3Provider
+testSuiteDefinitionTestSourceDirectory=/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/src/test/java
+surefireClassPathUrl.1=/Users/michiel/.m2/repository/org/apache/maven/surefire/surefire-api/2.7.1/surefire-api-2.7.1.jar
+surefireClassPathUrl.0=/Users/michiel/.m2/repository/org/apache/maven/surefire/surefire-junit3/2.7.1/surefire-junit3-2.7.1.jar
+useSystemClassLoader=true
+report.1=org.apache.maven.surefire.report.XMLReporter
+report.0=org.apache.maven.surefire.report.BriefConsoleReporter
+excludes0=**/*$*
+isTrimStackTrace=true
+dirscanner.0.params=/Users/michiel/mmbase/speeltuin/mihxil/webservice/example-webapp/target/test-classes|[**/*Test.java, **/*TestCase.java, **/*TestCases.java]|[**/*$*]
+enableAssertions=true
+includes2=**/*TestCases.java
+failIfNoTests=false
+includes1=**/*TestCase.java
+dirscanner.0.types=java.io.File|java.util.ArrayList|java.util.ArrayList
+includes0=**/*Test.java
+childDelegation=false

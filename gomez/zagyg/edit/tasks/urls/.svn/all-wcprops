@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/34607/speeltuin/gomez/zagyg/edit/tasks/urls
+END
+schema.xml
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/34607/speeltuin/gomez/zagyg/edit/tasks/urls/schema.xml
+END
+list_optional_one.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/34607/speeltuin/gomez/zagyg/edit/tasks/urls/list_optional_one.xml
+END
+list_exactly_one.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/34607/speeltuin/gomez/zagyg/edit/tasks/urls/list_exactly_one.xml
+END
+urls.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/34607/speeltuin/gomez/zagyg/edit/tasks/urls/urls.xml
+END
+urls_posrel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/34607/speeltuin/gomez/zagyg/edit/tasks/urls/urls_posrel.xml
+END
+list.xml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/34607/speeltuin/gomez/zagyg/edit/tasks/urls/list.xml
+END
+urls_optional_one.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/34607/speeltuin/gomez/zagyg/edit/tasks/urls/urls_optional_one.xml
+END
+list_posrel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/34607/speeltuin/gomez/zagyg/edit/tasks/urls/list_posrel.xml
+END
+urls_exactly_one.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/34607/speeltuin/gomez/zagyg/edit/tasks/urls/urls_exactly_one.xml
+END

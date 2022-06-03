@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/43988/speeltuin/mihxil/webservice/mmbase/src/main/java/org/mmbase/webservice
+END
+ComponentWebService.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/44704/speeltuin/mihxil/webservice/mmbase/src/main/java/org/mmbase/webservice/ComponentWebService.java
+END
+AbstractWebService.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/44704/speeltuin/mihxil/webservice/mmbase/src/main/java/org/mmbase/webservice/AbstractWebService.java
+END
+WebServiceServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/44890/speeltuin/mihxil/webservice/mmbase/src/main/java/org/mmbase/webservice/WebServiceServlet.java
+END
+FunctionWebService.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/44704/speeltuin/mihxil/webservice/mmbase/src/main/java/org/mmbase/webservice/FunctionWebService.java
+END
+AbstractFunctionWebService.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/44704/speeltuin/mihxil/webservice/mmbase/src/main/java/org/mmbase/webservice/AbstractFunctionWebService.java
+END
+AnyFunctionWebService.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/44704/speeltuin/mihxil/webservice/mmbase/src/main/java/org/mmbase/webservice/AnyFunctionWebService.java
+END
+WebServiceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/37674/speeltuin/mihxil/webservice/mmbase/src/main/java/org/mmbase/webservice/WebServiceException.java
+END
+WebService.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/44704/speeltuin/mihxil/webservice/mmbase/src/main/java/org/mmbase/webservice/WebService.java
+END
+WebServiceRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/38560/speeltuin/mihxil/webservice/mmbase/src/main/java/org/mmbase/webservice/WebServiceRepository.java
+END

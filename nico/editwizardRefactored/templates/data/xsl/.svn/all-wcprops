@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/data/xsl
+END
+base.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/data/xsl/base.xsl
+END
+list.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/data/xsl/list.xsl
+END
+exception.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/data/xsl/exception.xsl
+END
+wizard.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/data/xsl/wizard.xsl
+END
+searchlist.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/data/xsl/searchlist.xsl
+END
+prompts.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/data/xsl/prompts.xsl
+END
+baselist.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/data/xsl/baselist.xsl
+END
+debug.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/34607/speeltuin/nico/editwizardRefactored/templates/data/xsl/debug.xsl
+END

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nightly
+Build-Jdk: 1.6.0_18
+url: http://www.mmbase.org/mm2/mmbase-parent/mmbase-application-parent
+ /mmbase-searchrelate
+
+Name: org/mmbase
+Build-Date: 2010-03-18T05:38
+Comment: MMBase. MMBase Search and Relate (mmbase-searchrelate).
+Description: This applictions provides various tag-files and javascrip
+ t libraries to make modern editors ('web 2.0').
+Distribution: 1.9-SNAPSHOT
+SCM-Revision: 41487
+Vendor: MMBase Community
+Version: 1.9-SNAPSHOT.2010-03-18T05:38
+

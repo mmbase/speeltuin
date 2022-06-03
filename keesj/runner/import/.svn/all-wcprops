@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/34607/speeltuin/keesj/runner/import
+END
+Convert.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/!svn/ver/34607/speeltuin/keesj/runner/import/Convert.java
+END
+startImport.sh
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/34607/speeltuin/keesj/runner/import/startImport.sh
+END
+SyncNodes.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/!svn/ver/34607/speeltuin/keesj/runner/import/SyncNodes.java
+END
+AbstractImport.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/34607/speeltuin/keesj/runner/import/AbstractImport.java
+END

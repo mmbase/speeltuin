@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE module PUBLIC "//MMBase - module//" "http://www.mmbase.org/dtd/module.dtd">
+<module version="0" maintainer="vpro">
+  <status>active</status>
+  <classfile>nl.vpro.mmbase.vob.Republisher</classfile>
+  <properties>
+    <property name="pathToScan" value="nl.vpro"/>
+  </properties>
+</module>
+
+

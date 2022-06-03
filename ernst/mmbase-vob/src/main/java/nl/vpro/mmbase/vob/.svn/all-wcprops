@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/36474/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob
+END
+Direction.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/35463/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob/Direction.java
+END
+EntityFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/36265/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob/EntityFilter.java
+END
+QueryLimit.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/35494/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob/QueryLimit.java
+END
+Populator.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/36474/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob/Populator.java
+END
+QueryHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/35816/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob/QueryHelper.java
+END
+QueryDirection.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/36474/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob/QueryDirection.java
+END
+EntityConfigLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/36474/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob/EntityConfigLoader.java
+END
+DefaultQueryHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/36250/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob/DefaultQueryHelper.java
+END

@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>MMBase - As a Service?</title>
+    <script type="text/javascript" src="../common/jquery.js" />
+    <script type="text/javascript" src="../common/my.js" />
+    <link rel="stylesheet" href="../common/my.css" type="text/css" />
+  </head>
+  <body>
+    <div id="intro">
+      <h1>MMBase as a Service?</h1>
+
+      <h2><a href="#intro">Introduction</a></h2>
+      <div>
+        <ul>
+          <li>MMBase Cloud Interfaces (Bridge)</li>
+          <li>RMMCI</li>
+          <li>XML</li>
+          <li>RSS</li>
+          <li>Dove</li>
+          <li>SOAP</li>
+          <li>org.omg.CORBA.*</li>
+          <li>...</li>
+
+        </ul>
+      </div>
+    </div>
+    <div id="rmmci">
+      <h2><a href="#rmmci">Remote Bridge</a></h2>
+      <div>
+        <ul>
+          <li>One of the oldest ways to using MMBase from 'remotely' is RMMCI</li>
+          <li>java.rmi.*</li>
+          <li>
+        <pre><![CDATA[
+CloudContext cloudContext = ContextProvider.getCloudContext("rmi://127.0.0.1:1111/remotecontext");
+Cloud cloud = cloudContext.getCloud("mmbase", "class", null);
+      ]]></pre>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="dove">
+      <h2><a href="#dove">DOVE</a></h2>
+      <div>
+        <ul>
+          <li>Used by Editwizards</li>
+          <li>A way to edit MMBase object via Servlet (Unused)</li>
+          <li>Does Dove have a future?</li>
+        </ul>
+      </div>
+    </div>
+    <div id="soap">
+      <h2><a href="#soap">SOAP</a></h2>
+      <div>
+        <ul>
+          <li>Also a remote method invocation protocol</li>
+          <li>So like RMMCI, but using an XML</li>
+        </ul>
+      </div>
+    </div>
+    <div id="wsdl">
+      <h2><a href="#wsdl">Web Services Description Language</a></h2>
+      <div>
+        <ul>
+          <li><a href="http://cxf.apache.org">CXF</a></li>
+          <li>JAX-WS (javax.xml.ws.*)</li>
+          <li>SOAP</li>
+          <li>WSDL XML Specification
+          <pre><![CDATA[
+<plugin>
+  <groupId>org.apache.cxf</groupId>
+  <artifactId>cxf-codegen-plugin</artifactId>
+  <version>2.1.3</version>
+  <executions>
+    <execution>
+      <id>generate-sources-triple</id>
+      <phase>generate-sources</phase>
+      <configuration>
+        <wsdlOptions>
+          <wsdlOption>
+            <wsdl>http://elbe.triple-it.nl/ContentProviderPlatform/Soap/ContentProvider.asmx?WSDL</wsdl>
+          </wsdlOption>
+        </wsdlOptions>
+      </configuration>
+      <goals>
+        <goal>wsdl2java</goal>
+      </goals>
+    </execution>
+  </executions>
+</plugin>]]>
+          </pre>
+          </li>
+          <li>It would be nice to provide MMBase bridge in the same way</li>
+        </ul>
+      </div>
+    </div>
+    <div id="not">
+      <h2><a href="#not">But why?</a></h2>
+      <div>
+        <p>MMBase is actually pretty complete</p>
+        <ul>
+          <li>Persistency</li>
+          <li>Free object model</li>
+          <li>Template langauges</li>
+          <li>Components</li>
+          <li>URL-Converting</li>
+          <li>Authorization and Authentication</li>
+          <li>Clustering</li>
+          <li>Can use standard techniques like JSTL and EL, XSLT, XInclude</li>
+          <li>DataTypes and Functions to 'inject' functionality</li>
+          <li>Components: crontab, lucene, etc.</li>
+
+        </ul>
+        <p>, though not all these things perhaps are not yet pretty completely implemented and ready. See also <a href="2.xhtml#intro">MMBase 2</a> </p>
+      </div>
+    </div>
+
+    <div id="thanks">
+      <h2><a href="#thanks">Thanks</a></h2>
+      <div>
+        <p>Michiel.Meeuwissen@gmail.moc</p>
+        <p><a href="http://www.dynasol.nl">www.dynasol.nl</a></p>
+        <p><a href="http://www.mmbase.org/contact">www.mmbase.org/contact</a></p>
+        <p><a href="http://www.mmbase.org/jira">www.mmbase.org/jira</a></p>
+        <p>mihxil @ #mmbase @ SlashNet</p>
+        <p>2009-05-14</p>
+        <p>$URL$</p>
+      </div>
+    </div>
+    <div id="filler">
+
+    </div>
+  </body>
+</html>

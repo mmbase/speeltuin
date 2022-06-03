@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: michiel
+Build-Jdk: 1.6.0_24
+url: http://www.mmbase.org/mm2/mmbase-parent/mmbase-application-parent
+ /mmbase-webservice
+Class-Path: stax-api-1.0-2.jar
+
+Name: org/mmbase
+Build-Date: 2011-06-26T13:14
+Comment: MMBase. MMBase WebService (test) (mmbase-webservice).
+Description: Testing to make a web-service based on pure MMBase code.
+Distribution: 0.1-SNAPSHOT
+SCM-Revision: 43988
+Vendor: MMBase Community
+Version: 0.1-SNAPSHOT.2011-06-26T13:14
+

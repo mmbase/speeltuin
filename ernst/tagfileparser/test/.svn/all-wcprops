@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/!svn/ver/34607/speeltuin/ernst/tagfileparser/test
+END
+tagParserTest1.tag
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/34607/speeltuin/ernst/tagfileparser/test/tagParserTest1.tag
+END
+regexpTest1.tag
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/!svn/ver/34607/speeltuin/ernst/tagfileparser/test/regexpTest1.tag
+END
+DirectivesParserTest1.tag
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/34607/speeltuin/ernst/tagfileparser/test/DirectivesParserTest1.tag
+END
+log4j.properties
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/!svn/ver/34607/speeltuin/ernst/tagfileparser/test/log4j.properties
+END

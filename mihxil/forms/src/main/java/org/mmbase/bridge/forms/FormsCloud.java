@@ -1,0 +1,124 @@
+/*
+
+This software is OSI Certified Open Source Software.
+OSI Certified is a certification mark of the Open Source Initiative.
+
+The license (Mozilla version 1.0) can be read at the MMBase site.
+See http://www.MMBase.org/license
+
+*/
+
+package org.mmbase.bridge.forms;
+import org.mmbase.bridge.*;
+import org.mmbase.bridge.util.*;
+import org.mmbase.bridge.mock.*;
+import org.mmbase.util.xml.Instantiator;
+import org.mmbase.bridge.implementation.*;
+import org.mmbase.security.*;
+import java.util.*;
+import java.lang.reflect.*;
+
+/**
+ * This Cloud implementation manages a bunch of {@link Form}s.
+ *
+ * @author  Michiel Meeuwissen
+ * @version $Id: FormsCloud.java 44890 2011-01-14 18:15:01Z michiel $
+ */
+
+public class FormsCloud extends AbstractCloud {
+
+    final FormsCloudContext cloudContext;
+    final Cloud wrapped;
+    FormsCloud(String n, FormsCloudContext cc, UserContext uc) {
+        super(n, uc);
+        cloudContext = cc;
+        String cloudName = cloudContext.wrapped.getCloudNames().get(0);
+        wrapped = cloudContext.wrapped.getCloud(cloudName, getUser());
+    }
+    protected String getCloudName() {
+        return getName();
+    }
+
+
+    protected Map<String, NodeManagerDescription> getNodeManagerDescriptions() {
+        return cloudContext.getNodeManagerDescriptions().get(getCloudName());
+    }
+
+    /**
+     * @inheritDoc
+     * See also {@link Form#getNode(int)}.
+     */
+    @Override
+    public Node getNode(int number) throws NotFoundException {
+        List<NodeManager> list = new ArrayList<NodeManager>();
+        for (String nm : getNodeManagerDescriptions().keySet()) {
+            Form form = getNodeManager(nm);
+            Node n = form.getNode(number);
+            if (n != null) return n;
+        }
+        return wrapped.getNode(number);
+    }
+
+    @Override
+    public NodeManagerList getNodeManagers() {
+        List<NodeManager> list = new ArrayList<NodeManager>();
+        for (String nm : getNodeManagerDescriptions().keySet()) {
+            list.add(getNodeManager(nm));
+        }
+        return new BasicNodeManagerList(list, this);
+    }
+
+    @Override
+    public Form getNodeManager(String name) throws NotFoundException {
+        NodeManagerDescription nm = getNodeManagerDescriptions().get(name);
+        if (nm == null) throw new NotFoundException(name);
+        String className = nm.reader == null ? null : nm.reader.getClassName();
+        if (className == null || className.length() == 0) {
+            return new Form(this, nm);
+        } else {
+            try {
+                Class<?> clazz = (Class<?>) Class.forName(className);
+                Form newInstance;
+                if (! NodeManager.class.isAssignableFrom(clazz)) {
+                    newInstance = new NodeWrapperForm(this, nm, (Class<? extends Form>) clazz);
+                } else {
+                    Class<? extends Form> formClazz = (Class<? extends Form>) clazz;
+                    Constructor<? extends Form> constructor;
+                    try {
+                        constructor = formClazz.getConstructor(FormsCloud.class, NodeManagerDescription.class);
+                    } catch (NoSuchMethodException nsme) {
+                        constructor = formClazz.getConstructor(Cloud.class, NodeManagerDescription.class);
+                    }
+                    newInstance = constructor.newInstance(this, nm);
+                }
+                for (Map.Entry<String, String> entry : nm.properties.entrySet()) {
+                    Instantiator.setProperty(entry.getKey(), clazz, newInstance, entry.getValue());
+                }
+                return newInstance;
+            } catch (ClassNotFoundException cnfe) {
+                throw new BridgeException(cnfe);
+            } catch (NoSuchMethodException nsme) {
+                throw new BridgeException(nsme);
+            } catch (InstantiationException ie) {
+                throw new BridgeException(ie);
+            } catch (IllegalAccessException iae) {
+                throw new BridgeException(iae);
+            } catch (InvocationTargetException ite) {
+                throw new BridgeException(ite);
+            }
+        }
+    }
+
+    @Override
+    public FormsCloudContext getCloudContext() {
+        return cloudContext;
+    }
+
+    @Override
+    protected Transaction newTransaction(String name) {
+        return new FormsTransaction(name, this, wrapped.createTransaction(name));
+    }
+
+
+}
+

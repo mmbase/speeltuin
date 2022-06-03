@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/34607/speeltuin/keesj/eclipsedoc/docbook-xsl/extensions
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/34607/speeltuin/keesj/eclipsedoc/docbook-xsl/extensions/ChangeLog
+END
+prj.el
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/34607/speeltuin/keesj/eclipsedoc/docbook-xsl/extensions/prj.el
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/34607/speeltuin/keesj/eclipsedoc/docbook-xsl/extensions/build.xml
+END

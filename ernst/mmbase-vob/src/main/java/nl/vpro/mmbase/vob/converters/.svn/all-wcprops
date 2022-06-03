@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/35463/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob/converters
+END
+PassThroughFieldConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/35463/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob/converters/PassThroughFieldConverter.java
+END
+EpochDateConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/35463/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob/converters/EpochDateConverter.java
+END
+FieldConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35463/speeltuin/ernst/mmbase-vob/src/main/java/nl/vpro/mmbase/vob/converters/FieldConverter.java
+END

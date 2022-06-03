@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: michiel
+Build-Jdk: 1.6.0_24
+url: http://www.mmbase.org/mm2/mmbase-parent/mmbase-application-parent
+ /mmbase-cxf
+Class-Path: cxf-rt-core-2.2.7.jar cxf-api-2.2.7.jar geronimo-activatio
+ n_1.1_spec-1.0.2.jar wstx-asl-3.2.9.jar neethi-2.0.4.jar cxf-common-s
+ chemas-2.2.7.jar jaxb-impl-2.1.12.jar XmlSchema-1.4.5.jar spring-core
+ -2.5.6.jar commons-logging-1.1.1.jar geronimo-javamail_1.4_spec-1.6.j
+ ar cxf-rt-frontend-simple-2.2.7.jar cxf-rt-bindings-soap-2.2.7.jar cx
+ f-tools-common-2.2.7.jar cxf-rt-databinding-jaxb-2.2.7.jar cxf-rt-fro
+ ntend-jaxws-2.2.7.jar xml-resolver-1.2.jar geronimo-jaxws_2.1_spec-1.
+ 0.jar geronimo-ws-metadata_2.0_spec-1.1.2.jar asm-2.2.3.jar cxf-rt-bi
+ ndings-xml-2.2.7.jar cxf-rt-ws-addr-2.2.7.jar saaj-api-1.3.jar saaj-i
+ mpl-1.3.2.jar cxf-rt-databinding-aegis-2.2.7.jar cxf-rt-transports-lo
+ cal-2.2.7.jar cxf-rt-transports-http-2.2.7.jar spring-web-2.5.6.jar c
+ xf-rt-transports-http-jetty-2.2.7.jar jetty-6.1.21.jar jetty-util-6.1
+ .21.jar slf4j-api-1.5.8.jar geronimo-servlet_2.5_spec-1.2.jar cxf-rt-
+ transports-jms-2.2.7.jar geronimo-jms_1.1_spec-1.1.1.jar commons-pool
+ -1.5.2.jar spring-jms-2.5.6.jar spring-context-support-2.5.6.jar spri
+ ng-tx-2.5.6.jar cxf-rt-management-2.2.7.jar cxf-common-utilities-2.2.
+ 7.jar spring-beans-2.5.6.jar spring-context-2.5.6.jar aopalliance-1.0
+ .jar geronimo-annotation_1.0_spec-1.1.1.jar jaxb-api-2.1.jar geronimo
+ -stax-api_1.0_spec-1.0.1.jar wsdl4j-1.6.2.jar commons-lang-2.4.jar js
+ r311-api-1.0.jar
+
+Name: org/mmbase
+Build-Date: 2011-06-26T13:14
+Comment: MMBase. MMBase CXF (test) (mmbase-cxf).
+Description: CXF seems to be a usefull WebService framework which we m
+ ay adapt for use with MMBase.
+Distribution: 0.1-SNAPSHOT
+SCM-Revision: 43988
+Vendor: MMBase Community
+Version: 0.1-SNAPSHOT.2011-06-26T13:14
+

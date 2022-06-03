@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain
+END
+AgendaWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/AgendaWrapper.java
+END
+EventWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/EventWrapper.java
+END
+ImageWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/ImageWrapper.java
+END
+OrderedWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/OrderedWrapper.java
+END
+NodeWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/NodeWrapper.java
+END
+ParagraphWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/ParagraphWrapper.java
+END
+AttachmentWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/AttachmentWrapper.java
+END
+GallerijWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/GallerijWrapper.java
+END
+InternalLinkWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/InternalLinkWrapper.java
+END
+PageWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/PageWrapper.java
+END
+LangArtikelWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/LangArtikelWrapper.java
+END
+LinkWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/LinkWrapper.java
+END
+RedactiegroepWrapper.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/35222/speeltuin/kennisnet/webservice/src/nl/kennisnet/cpb/webservice/domain/RedactiegroepWrapper.java
+END

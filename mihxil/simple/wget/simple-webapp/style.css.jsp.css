@@ -1,0 +1,221 @@
+/* -*- mode: css -*- */
+html {
+  background-color: #ffa500;
+  color: #333;
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+    background-image: url(images/587/009.jpeg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+body {
+  margin-top: 8px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 0;
+}
+.container {
+  top: 0px;
+  left: 0px;
+  position: relative;
+  display: block;
+  max-width: 1000px;
+  min-width: 200x;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.content,
+div#menu {
+  position: absolute;
+  left: 200px;
+  background-color: #fff;
+}
+div.content {
+  background-color: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  top: 100px;
+  /*
+  -moz-border-radius-bottomleft: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  -moz-border-radius-bottomright: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  */
+}
+div.content h3 {
+  margin-top: 60px;
+}
+div#menu {
+  font-family: Verdana;
+  top: 0px;
+  height: 100px;
+  /*
+  -moz-border-radius-topleft: 20px;
+  -webkit-border-top-left-radius: 20px;
+  border-top-left-radius: 20px;
+  -moz-border-radius-topright: 20px;
+  -webkit-border-top-right-radius: 20px;
+  border-top-right-radius: 20px;
+  */
+}
+div.content > *,
+div.content span.inner > * { /* from roundedCorner */
+  padding-left: 100px;
+  padding-right: 1ex;
+}
+div.content  img.image-left {
+  margin-left: -80px;
+  margin-right: 10px;
+}
+div.content h2 {
+  display: none;
+}
+div#menu ul {
+  margin-left: 20px;
+  display: block;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+div#menu ul li {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  background-color: #aaa;
+  text-align: center;
+  cursor: pointer;
+  width: 175px;
+  height: 80px;
+}
+div#menu ul li.last {
+  margin-right: 0px;
+}
+div.intro .head {
+  font-family: Verdana;
+  margin-top: 20px;
+  height: 80px;
+  width: 160px;
+  color: white;
+  text-align: center;
+}
+div.intro > *,
+div.intro span.inner > * { /* from roundedCorner */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+div.intro h1 {
+  display: block;
+  left: 0px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 160px;
+  height: 30px;
+  top: 50px;
+  color: #000;
+  font-weight: bold;
+  font-size: 13pt;
+  text-transform: uppercase;
+}
+     div.intro .head {
+      background-image: url(images/567/DSC03501.png);
+     }
+   /* 'preload' the hovers */
+   li#menu169 {
+      background-image: url(images/569/009.png);
+   }
+   li#menu169.inactive {
+      background-image: url(images/568/009.png);
+   }
+   li#menu169.active,
+   li#menu169.hover {
+      background-image: url(images/569/009.png);
+   }
+   /* 'preload' the hovers */
+   li#menu171 {
+      background-image: url(images/571/004.png);
+   }
+   li#menu171.inactive {
+      background-image: url(images/570/004.png);
+   }
+   li#menu171.active,
+   li#menu171.hover {
+      background-image: url(images/571/004.png);
+   }
+   /* 'preload' the hovers */
+   li#menu251 {
+      background-image: url(images/573/023.png);
+   }
+   li#menu251.inactive {
+      background-image: url(images/572/023.png);
+   }
+   li#menu251.active,
+   li#menu251.hover {
+      background-image: url(images/573/023.png);
+   }
+   /* 'preload' the hovers */
+   li#menu253 {
+      background-image: url(images/575/Varen_op_Amstel_104.png);
+   }
+   li#menu253.inactive {
+      background-image: url(images/574/Varen_op_Amstel_104.png);
+   }
+   li#menu253.active,
+   li#menu253.hover {
+      background-image: url(images/575/Varen_op_Amstel_104.png);
+   }
+div#menu a {
+  text-transform: uppercase;
+  width: 175px;
+  display: block;
+  position: relative;
+  text-decoration: none;
+  height: 30px;
+  left: 0px;
+  top: 50px;
+  color: #666;
+  font-weight: bold;
+}
+div#menu li.active a,
+div#menu li a:hover {
+  color: #000;
+}
+div.intro {
+  padding: 0px;
+  margin: 0;
+  position: absolute;
+  left: -2px;
+  width: 198px;
+  background-color: #fff;
+  /*
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  */
+}
+div.footer {
+  border-top: solid 1px white;
+  position: absolute;
+  top: 900px;
+  height: 20px;
+  background-color: #ffc722;
+  text-align: center;
+}
+div.footer p {
+  margin: 0;
+  padding: 0;
+}
+a.mm_portal_edit {
+  position: relative;
+}
+div.icons {
+  text-align: center;
+}
+div.icons img {
+  border: none;
+  margin-right: 1ex;
+}
+

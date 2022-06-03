@@ -1,0 +1,132 @@
+<html xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>mm-portal
+          (MMBase portal Tag library documentation)
+        </title>
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="styie">
+</head>
+<script>
+            function asd()
+            {
+            parent.document.title="mm-portal (MMBase portal Tag library documentation)";
+            }
+          </script>
+<body bgcolor="white" onload="asd();">
+<a name="navbar_top"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_top_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">    &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Library&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><font CLASS="NavBarFont1">&nbsp;Tag&nbsp;</font></td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a HREF="tld-summary.html" TARGET="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<h2>mm-portal</h2>
+<hr>
+<b>Standard Syntax:</b>
+<br>
+<code>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    &lt;%@ taglib prefix="mm-portal" uri="http://www.mmbase.org/tags/mm/portal" %&gt;<br>
+</code>
+<br>
+<b>XML Syntax:</b>
+<br>
+<code>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                    &lt;anyxmlelement xmlns:mm-portal="http://www.mmbase.org/tags/mm/portal" /&gt;<br>
+</code>
+<hr>
+                No Description
+              <p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Library Information</b></font></td>
+</tr>
+<tr>
+<td>Display Name</td><td><i>None</i></td>
+</tr>
+<tr>
+<td>Version</td><td>1.0</td>
+</tr>
+<tr>
+<td>Short Name</td><td>mm-portal</td>
+</tr>
+<tr>
+<td>URI</td><td>http://www.mmbase.org/tags/mm/portal</td>
+</tr>
+</table>
+            &nbsp;
+            <p></p>
+<table border="1" cellpadding="3" cellspacing="0" width="100%">
+<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+<td colspan="2"><font size="+2"><b>Tag Summary</b></font></td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="blocks.html">blocks</a></b></td><td>Produces a div, and takes the current node (_node), and determing the related 'blocks' (using 'blockposrel).
+                   For each found node then a div is produced, with the proper css classes to position them.
+                   In the body the variables 'block' and 'blockposrel' are produced, which are the two MMBase Nodes which are relevant.
+                   These blockposrel variable can typically be put into the portal:block tag.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="block.html">block</a></b></td><td>Using the x/y of the given blockposrel, it determins the related (Using 'cartesianrel') content to the current (_node), and iterates those.</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="page.html">page</a></b></td><td>Calculates the currently to be used page, it looks at related 'pages' object which are related to the 'current' node</td>
+</tr>
+<tr bgcolor="white" class="TableRowColor">
+<td width="15%"><b><a href="pages.html">pages</a></b></td><td><i>No Description</i></td>
+</tr>
+</table>
+              &nbsp;
+              <p></p>
+<a name="navbar_bottom"></a>
+<table border="0" width="100%" cellpadding="1" cellspacing="0">
+<tr>
+<td COLSPAN="3" BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><a NAME="navbar_bottom_firstrow"></a>
+<table BORDER="0" CELLPADDING="0" CELLSPACING="3">
+<tr ALIGN="center" VALIGN="top">
+<td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a href="../overview-summary.html"><font CLASS="NavBarFont1"><b>Overview</b></font></a>&nbsp;</td><td BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev">    &nbsp;<font CLASS="NavBarFont1Rev">&nbsp;Library&nbsp;</font>&nbsp;</td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1"><font CLASS="NavBarFont1">&nbsp;Tag&nbsp;</font></td><td BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    &nbsp;<a HREF="../help-doc.html"><font CLASS="NavBarFont1"><b>Help</b></font></a>&nbsp;</td>
+</tr>
+</table>
+</td><td ALIGN="right" VALIGN="top" ROWSPAN="3"><em></em></td>
+</tr>
+<tr>
+<td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2"></font></td><td BGCOLOR="white" CLASS="NavBarCell2"><font SIZE="-2">
+                &nbsp;<a HREF="../index.html" TARGET="_top"><b>FRAMES</b></a>&nbsp;
+                &nbsp;<a HREF="tld-summary.html" TARGET="_top"><b>NO FRAMES</b></a>&nbsp;
+                <script></script>
+<noscript>
+<a HREF="../alltags-noframe.html" TARGET=""><b>All Tags</b></a>
+</noscript>
+</font></td>
+</tr>
+</table>
+<hr>
+<small><i>
+            Java, JSP, and JavaServer Pages are trademarks or registered 
+            trademarks of Sun Microsystems, Inc. in the US and other countries.
+            Copyright 2002-3 Sun Microsystems, Inc.
+            4150 Network Circle
+            Santa Clara, CA 95054, U.S.A.
+            All Rights Reserved. 
+            </i></small>
+</body>
+</html>

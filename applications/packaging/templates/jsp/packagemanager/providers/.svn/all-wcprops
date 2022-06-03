@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/!svn/ver/34607/speeltuin/applications/packaging/templates/jsp/packagemanager/providers
+END
+changesettings.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/34607/speeltuin/applications/packaging/templates/jsp/packagemanager/providers/changesettings.jsp
+END
+index.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/34607/speeltuin/applications/packaging/templates/jsp/packagemanager/providers/index.jsp
+END
+provider.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/34607/speeltuin/applications/packaging/templates/jsp/packagemanager/providers/provider.jsp
+END
+providers.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/34607/speeltuin/applications/packaging/templates/jsp/packagemanager/providers/providers.jsp
+END
+delprovider.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/34607/speeltuin/applications/packaging/templates/jsp/packagemanager/providers/delprovider.jsp
+END
+actions.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/34607/speeltuin/applications/packaging/templates/jsp/packagemanager/providers/actions.jsp
+END
+addprovider.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/34607/speeltuin/applications/packaging/templates/jsp/packagemanager/providers/addprovider.jsp
+END

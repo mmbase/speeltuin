@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions
+END
+installAllBuilders.shtml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions/installAllBuilders.shtml
+END
+installApplication.shtml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions/installApplication.shtml
+END
+installDataSet.shtml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions/installDataSet.shtml
+END
+installDisplay.shtml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions/installDisplay.shtml
+END
+installBuilder.shtml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions/installBuilder.shtml
+END
+save.shtml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions/save.shtml
+END
+deinstall.shtml
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions/deinstall.shtml
+END
+installAllTypeDefs.shtml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions/installAllTypeDefs.shtml
+END
+installAllRelDefs.shtml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions/installAllRelDefs.shtml
+END
+installRelation.shtml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions/installRelation.shtml
+END
+deleteApplication.shtml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions/deleteApplication.shtml
+END
+installRelDef.shtml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/!svn/ver/34607/speeltuin/apps2/html/mmapps2.0/actions/installRelDef.shtml
+END

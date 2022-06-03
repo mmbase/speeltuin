@@ -1,0 +1,190 @@
+                                                                              
+                                                                        
+                                                                    
+                                                                                     
+                                                                                         
+                                                                         
+                                                                        
+                                                                       
+                                                                             
+                                                                       
+                                                                      
+                                                                           
+                                                                           
+                                                                      
+                                                                          
+                                                                                 
+                                                                                      
+132,10,admin,core,contextproviders,,NORMAL,org.mmbase.portal.refresh.Expires,3600
+                                                                             
+                                                                             
+                                                                          
+                                                                      
+                                                                      
+                                                                        
+                                                                                 
+                                                                         
+                                                                           
+                                                                                     
+                                                                     
+                                                                         
+                                                                             
+                                                                    
+                                                                         
+                                                                        
+                                                                      
+                                                                        
+                                                                          
+                                                                      
+                                                                                     
+                                                                                         
+                                                                             
+                                                                        
+                                                                                     
+                                                                       
+                                                                           
+                                                                                
+                                                                                  
+                                                                            
+                                                                           
+                                                                          
+                                                                                       
+                                                                                
+                                                                            
+                                                                                 
+                                                                                 
+                                                                                            
+                                                                                                   
+                                                                                     
+                                                                               
+                                                                               
+                                                                            
+                                                                               
+                                                                                       
+                                                                       
+                                                                                  
+                                                                                   
+                                                                                   
+                                                                            
+                                                                              
+                                                                            
+                                                                                      
+                                                                                 
+                                                                                   
+                                                                             
+                                                                            
+                                                                            
+                                                                                            
+                                                                             
+                                                                                   
+                                                                                  
+                                                                             
+                                                                     
+                                                                     
+                                                                        
+                                                                    
+                                                                    
+                                                                   
+54,10,admin,core,builders-field,The various attributes of a field.,NORMAL,org.mmbase.portal.refresh.Expires,3600
+55,10,admin,core,datatype,datatype,NORMAL,org.mmbase.portal.refresh.Expires,3600
+56,10,admin,core,jobs,"An overview of the several ThreadPools which are used in MMBase, and which
+      are collected in org.mmbase.util.ThreadPools.",NORMAL,org.mmbase.portal.refresh.Expires,3600
+57,10,admin,core,databases-connections,View of the database connections,NORMAL,org.mmbase.portal.refresh.Expires,3600
+58,10,admin,core,mmbase_microblog_uncached,mmbase_microblog_uncached,NORMAL,org.mmbase.portal.refresh.Expires,3600
+61,10,admin,core,functions,functions,NORMAL,org.mmbase.portal.refresh.Expires,3600
+62,10,admin,core,security,Shows details of the current security configuration.,NORMAL,org.mmbase.portal.refresh.Expires,3600
+63,10,admin,core,welcome,Shows welcome page for MMBase admin pages,NORMAL,org.mmbase.portal.refresh.Expires,3600
+68,10,admin,core,documentation,Renderering of our docbook documentation (expiremental),NORMAL,org.mmbase.portal.refresh.Expires,3600
+74,10,admin,core,modules,Information about the installed MMBase modules,NORMAL,org.mmbase.portal.refresh.Expires,3600
+80,10,admin,core,apidoc,apidoc,NORMAL,org.mmbase.portal.refresh.Expires,3600
+90,10,admin,core,mmbase_news,Shows latest news from www.mmbase.org,NORMAL,org.mmbase.portal.refresh.Expires,3600
+98,10,admin,core,view_source,view_source,NORMAL,org.mmbase.portal.refresh.Expires,3600
+107,10,admin,core,blobs,"This page provides a tool to convert blobs to
+    the filesystem. Per default blobs live in the database.",NORMAL,org.mmbase.portal.refresh.Expires,3600
+118,10,admin,core,datatypes,Overview of datatypes,NORMAL,org.mmbase.portal.refresh.Expires,3600
+121,10,admin,core,mmbase_microblog,Shows latest updates from twitter.com/mmbase,NORMAL,org.mmbase.portal.refresh.Expires,3600
+127,10,admin,core,releasenotes_uncached,releasenotes_uncached,NORMAL,org.mmbase.portal.refresh.Expires,3600
+142,10,admin,core,applications,Shows an overview of all MMBase apps1 applications. An app1 contains object model definition and possibly objects too,NORMAL,org.mmbase.portal.refresh.Expires,3600
+147,10,admin,core,transactions,Shows an overview of all open MMBase transactions,NORMAL,org.mmbase.portal.refresh.Expires,3600
+154,10,admin,core,showcache,showcache,NORMAL,org.mmbase.portal.refresh.Expires,3600
+155,10,admin,core,basic,basic,NORMAL,org.mmbase.portal.refresh.Expires,3600
+161,10,admin,core,login,Generic login box for MMBase,NORMAL,org.mmbase.portal.refresh.Expires,3600
+163,10,admin,core,servers,MMBase servers on this system,NORMAL,org.mmbase.portal.refresh.Expires,3600
+164,10,admin,core,builders-actions,"Folow-up for the first builders block, shows a builders class and fields.",NORMAL,org.mmbase.portal.refresh.Expires,3600
+165,10,admin,core,watchers,An overview of all watched configuration resources.,NORMAL,org.mmbase.portal.refresh.Expires,3600
+166,10,admin,core,my_editors,Alternative generic editors,NORMAL,org.mmbase.portal.refresh.Expires,3600
+167,10,admin,core,applications-actions,"This is the follow-up for the application installation page and shows the
+      results of an application backup or install.",NORMAL,org.mmbase.portal.refresh.Expires,3600
+168,10,admin,core,mrtg,A tool to monitor MMBase with MRTG.,NORMAL,org.mmbase.portal.refresh.Expires,3600
+169,10,admin,core,entities,A tool to view all 'mmbase entities' which are available in configuration files.,NORMAL,org.mmbase.portal.refresh.Expires,3600
+170,10,admin,core,releasenotes,Shows the release notes straight from the bugtracker on www.mmbase.org.,NORMAL,org.mmbase.portal.refresh.Expires,3600
+171,10,admin,core,jvm,jvm,NORMAL,org.mmbase.portal.refresh.Expires,3600
+172,10,admin,core,builders,"Shows an overview of all builders present in this MMBase installation.
+	  The first list contains all builders that are currently 'active' (accessible through MMBase).
+	  The second list (if available) lists all builders for which the definition is known, but which are currently inactive
+	  (and thus inaccessible).",NORMAL,org.mmbase.portal.refresh.Expires,3600
+173,10,admin,core,license,Shows the MMBase license,NORMAL,org.mmbase.portal.refresh.Expires,3600
+174,10,admin,core,model,model,NORMAL,org.mmbase.portal.refresh.Expires,3600
+175,10,admin,core,request,Shows the request headers as issued by the client.,NORMAL,org.mmbase.portal.refresh.Expires,3600
+176,10,admin,core,databases,"Information about the database and its connections.
+      This overview lists all database systems supported by this system, as well as
+      all connection pools - which administrate the actual database connections.",NORMAL,org.mmbase.portal.refresh.Expires,3600
+177,10,admin,core,cache,"This tools hows the performance of the various MMBase
+    caches. You can also (temporary) turn on/off the cache here. For a persistant
+    change you should change caches.xml.",NORMAL,org.mmbase.portal.refresh.Expires,3600
+178,10,admin,core,mmbase_news_uncached,mmbase_news_uncached,NORMAL,org.mmbase.portal.refresh.Expires,3600
+179,10,admin,core,components-documentation,components-documentation,NORMAL,org.mmbase.portal.refresh.Expires,3600
+180,10,admin,core,resourceedit,Maakt het mogelijk om on-line MMBase resources te editen.,NORMAL,org.mmbase.portal.refresh.Expires,3600
+181,10,admin,core,docbook,docbook,NORMAL,org.mmbase.portal.refresh.Expires,3600
+182,10,admin,core,component-block-tree,"Hierarchical tree view of the available components and blocks. A block
+      can get a classification which determines its position in the admin menu.",NORMAL,org.mmbase.portal.refresh.Expires,3600
+183,10,admin,core,events,A tool to directly send events into your MMBase system.,NORMAL,org.mmbase.portal.refresh.Expires,3600
+184,10,admin,core,components,Shows an overview of all available framework components in the current MMBase.,NORMAL,org.mmbase.portal.refresh.Expires,3600
+185,10,admin,core,modules-actions,"View, edit or add module properties",NORMAL,org.mmbase.portal.refresh.Expires,3600
+186,10,admin,mmexamples,jsp-editors,Examples of generic JSP/taglib based editors.,NORMAL,org.mmbase.portal.refresh.Expires,3600
+187,10,admin,mmexamples,index,"The MMExamples are several examples of components, applications and other
+      functionaliteits which are build with MMBase. In the list below you will find
+      several examples that are (yet) not rewritten as components. These can be found
+      in the /mmexamples directory. It is adviced to remove these from a production 
+      environment.
+      Other examples can be found in the sub-menu below 'Examples'.",NORMAL,org.mmbase.portal.refresh.Expires,3600
+188,10,admin,mynews,magazine,"Het beroemde 'MyNews' voorbeeld, nu als een component.",NORMAL,org.mmbase.portal.refresh.Expires,3600
+189,10,admin,mynews,article,article,NORMAL,org.mmbase.portal.refresh.Expires,3600
+190,10,admin,portal,portal-documentation,portal-documentation,NORMAL,org.mmbase.portal.refresh.Expires,3600
+191,10,admin,portal,portal-taglib,portal-taglib,NORMAL,org.mmbase.portal.refresh.Expires,3600
+192,10,admin,resources,recent,Displays recent resources in MMBase,NORMAL,org.mmbase.portal.refresh.Expires,3600
+193,10,admin,resources,captchamail,"Mail form, with captcha Turing test. The email builder must be
+      installed for this to work.",NORMAL,org.mmbase.portal.refresh.Expires,3600
+194,10,admin,resources,imageupload,An image upload tool,NORMAL,org.mmbase.portal.refresh.Expires,3600
+195,10,admin,searchrelate,searchrelate-taglib,searchrelate-taglib,NORMAL,org.mmbase.portal.refresh.Expires,3600
+196,10,admin,searchrelate,searchrelate-documentation,searchrelate-documentation,NORMAL,org.mmbase.portal.refresh.Expires,3600
+197,10,admin,searchrelate,searchrelate,searchrelate,NORMAL,org.mmbase.portal.refresh.Expires,3600
+198,10,admin,taglib,test_context,test_context,NORMAL,org.mmbase.portal.refresh.Expires,3600
+199,10,admin,taglib,test_include,test_include,NORMAL,org.mmbase.portal.refresh.Expires,3600
+200,10,admin,taglib,test_even,test_even,NORMAL,org.mmbase.portal.refresh.Expires,3600
+201,10,admin,taglib,test_compare,test_compare,NORMAL,org.mmbase.portal.refresh.Expires,3600
+202,10,admin,taglib,taglib-documentation,taglib-documentation,NORMAL,org.mmbase.portal.refresh.Expires,3600
+203,10,admin,taglib,test,test,NORMAL,org.mmbase.portal.refresh.Expires,3600
+204,10,admin,taglib,taglib_examples,taglib_examples,NORMAL,org.mmbase.portal.refresh.Expires,3600
+205,10,admin,taglib,taglib-including,taglib-including,NORMAL,org.mmbase.portal.refresh.Expires,3600
+206,10,admin,taglib,taglib-reference,taglib-reference,NORMAL,org.mmbase.portal.refresh.Expires,3600
+207,10,admin,taglib,test_tree,test_tree,NORMAL,org.mmbase.portal.refresh.Expires,3600
+208,10,admin,taglib,test_import,test_import,NORMAL,org.mmbase.portal.refresh.Expires,3600
+209,10,admin,taglib,test_node,test_node,NORMAL,org.mmbase.portal.refresh.Expires,3600
+210,10,admin,taglib,test_listcontainers,test_listcontainers,NORMAL,org.mmbase.portal.refresh.Expires,3600
+211,10,admin,taglib,test_fieldinfo,test_fieldinfo,NORMAL,org.mmbase.portal.refresh.Expires,3600
+212,10,admin,taglib,test_contextvars,test_contextvars,NORMAL,org.mmbase.portal.refresh.Expires,3600
+213,10,admin,taglib,test_image,test_image,NORMAL,org.mmbase.portal.refresh.Expires,3600
+214,10,admin,taglib,test_vars,test_vars,NORMAL,org.mmbase.portal.refresh.Expires,3600
+215,10,admin,taglib,test_form,test_form,NORMAL,org.mmbase.portal.refresh.Expires,3600
+216,10,admin,taglib,taglib-reference-uncached,taglib-reference-uncached,NORMAL,org.mmbase.portal.refresh.Expires,3600
+217,10,admin,taglib,test_cloud,test_cloud,NORMAL,org.mmbase.portal.refresh.Expires,3600
+218,10,admin,taglib,test_transaction,test_transaction,NORMAL,org.mmbase.portal.refresh.Expires,3600
+219,10,admin,taglib,test_attributes,test_attributes,NORMAL,org.mmbase.portal.refresh.Expires,3600
+220,10,admin,test,authenticate,Shows details of security configuration,NORMAL,org.mmbase.portal.refresh.Expires,3600
+221,10,admin,test,test,TEST,NORMAL,org.mmbase.portal.refresh.Expires,3600
+222,10,admin,test,urls,urls,NORMAL,org.mmbase.portal.refresh.Expires,3600
+223,10,admin,test,suburls,suburls,NORMAL,org.mmbase.portal.refresh.Expires,3600
+224,10,admin,x,create,Create node page,NORMAL,org.mmbase.portal.refresh.Expires,3600
+225,10,admin,x,change,Change node page,NORMAL,org.mmbase.portal.refresh.Expires,3600
+226,10,admin,x,index,Search page,NORMAL,org.mmbase.portal.refresh.Expires,3600

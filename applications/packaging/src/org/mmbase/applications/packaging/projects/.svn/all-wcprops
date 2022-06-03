@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/projects
+END
+IncludedPackage.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/projects/IncludedPackage.java
+END
+Project.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/projects/Project.java
+END
+Target.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/projects/Target.java
+END
+packageStep.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/projects/packageStep.java
+END
+PackageDepend.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/34607/speeltuin/applications/packaging/src/org/mmbase/applications/packaging/projects/PackageDepend.java
+END

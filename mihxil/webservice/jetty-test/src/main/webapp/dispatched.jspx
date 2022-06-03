@@ -1,0 +1,6 @@
+<foo
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+    >
+  <jsp:output omit-xml-declaration="true" />
+  <jsp:scriptlet>out.print("bar");</jsp:scriptlet>
+</foo>

@@ -1,0 +1,233 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/!svn/ver/41180/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core
+END
+model.dot.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/41210/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/model.dot.jsp
+END
+databases.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/41180/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/databases.jsp
+END
+blobs.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/blobs.jspx
+END
+style.css
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/style.css
+END
+resourceedit.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/41180/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/resourceedit.jsp
+END
+functions.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/functions.jspx
+END
+mrtg.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/mrtg.jspx
+END
+about.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/about.jspx
+END
+datatype.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/datatype.jspx
+END
+databases-connections.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/41180/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/databases-connections.jsp
+END
+watchers.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/37176/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/watchers.jspx
+END
+applications-actions.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/applications-actions.jspx
+END
+cite.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/cite.jspx
+END
+applications.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/37177/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/applications.jspx
+END
+servers.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/servers.jspx
+END
+jvm.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/36692/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/jvm.jspx
+END
+jobs.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/jobs.jspx
+END
+datatypes.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/datatypes.jspx
+END
+inheritance.svg.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/41180/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/inheritance.svg.jsp
+END
+model.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/41180/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/model.jspx
+END
+events.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/events.jspx
+END
+401.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/401.jspx
+END
+builder.ul.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/builder.ul.jspx
+END
+model.svg.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/41210/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/model.svg.jsp
+END
+security.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/security.jspx
+END
+builders-actions.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/builders-actions.jspx
+END
+login.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/login.jspx
+END
+transactions.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/!svn/ver/37817/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/transactions.jspx
+END
+builders.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/builders.jspx
+END
+modules-actions.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/41180/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/modules-actions.jsp
+END
+functions-modules.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/functions-modules.jspx
+END
+functions-builders.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/functions-builders.jspx
+END
+modules.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/41180/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/modules.jsp
+END
+contextproviders.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/!svn/ver/39452/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/contextproviders.jspx
+END
+mpl-1.0.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/mpl-1.0.jspx
+END
+functions-sets.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/37707/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/functions-sets.jspx
+END
+request.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/38267/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/request.jspx
+END
+builders-field.jspx
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/!svn/ver/36061/mmbase/trunk/base-webapp/src/main/webapp/mmbase/components/core/builders-field.jspx
+END

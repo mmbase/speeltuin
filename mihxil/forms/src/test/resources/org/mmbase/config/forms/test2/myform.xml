@@ -1,0 +1,150 @@
+<?xml version="1.0" ?>
+<builder
+    xmlns="http://www.mmbase.org/xmlns/builder"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mmbase.org/xmlns/builder
+                        http://www.mmbase.org/xmlns/builder.xsd"
+    name="myform" maintainer="mmbase.org" version="0">
+  <class>org.mmbase.bridge.forms.AANode</class>
+  <names>
+    <singular xml:lang="en">Test Form</singular>
+    <plural xml:lang="nl">Testformulier</plural>
+  </names>
+  <fieldlist>
+    <field name="title">
+      <descriptions>
+        <description xml:lang="en">Title of the news item</description>
+        <description xml:lang="nl">Titel (hoofd kop) van het nieuwsitem</description>
+      </descriptions>
+      <gui>
+        <guiname xml:lang="en">Title</guiname>
+        <guiname xml:lang="fr">Titre</guiname>
+        <guiname xml:lang="nl">Titel</guiname>
+        <guiname xml:lang="eo">Titolo</guiname>
+      </gui>
+      <editor>
+        <positions>
+          <list>1</list>
+        </positions>
+      </editor>
+      <datatype base="line" xmlns="http://www.mmbase.org/xmlns/datatypes">
+        <default value="Article title" />
+        <required value="true" />
+        <minLength value="2" />
+        <maxLength value="255" />
+      </datatype>
+    </field>
+    <field name="subtitle">
+      <descriptions>
+        <description xml:lang="en">Subtitle of the news item</description>
+        <description xml:lang="nl">Sub hoofd van het nieuwsitem</description>
+      </descriptions>
+      <gui>
+        <guiname xml:lang="en">SubTitle</guiname>
+        <guiname xml:lang="fr">Sous-titre</guiname>
+        <guiname xml:lang="nl">SubTitel</guiname>
+        <guiname xml:lang="eo">Subtitolo</guiname>
+      </gui>
+      <datatype base="line" xmlns="http://www.mmbase.org/xmlns/datatypes">
+        <maxLength value="255" />
+        <!--
+        <enumeration enforce="never">
+          <entry xml:lang="nl" value="hokus pokus" />
+          <entry xml:lang="nl" value="simsalabim" />
+          <entry xml:lang="nl" value="pilatus pas" />
+          <entry xml:lang="nl" value="abcracadabra" />
+          <entry xml:lang="en" value="simsalabim" />
+          <entry xml:lang="en" value="pilatus pas" />
+          <entry xml:lang="en" value="hocus pocus" />
+        </enumeration>
+        -->
+      </datatype>
+    </field>
+    <field name="intro">
+      <descriptions>
+        <description xml:lang="en">Introduction text or teaser</description>
+        <description xml:lang="nl">Introductietekst of teaser</description>
+      </descriptions>
+      <gui>
+        <guiname xml:lang="en">Intro</guiname>
+        <guiname xml:lang="fr">Intro</guiname>
+        <guiname xml:lang="nl">Intro</guiname>
+        <guiname xml:lang="eo">Enkonduko</guiname>
+      </gui>
+      <datatype base="field" xmlns="http://www.mmbase.org/xmlns/datatypes">
+        <maxLength value="2048" />
+      </datatype>
+    </field>
+    <field name="body">
+      <descriptions>
+        <description xml:lang="en">Main text of the newsitem</description>
+        <description xml:lang="nl">Hoofdtekst van het nieuwsitem</description>
+      </descriptions>
+      <gui>
+        <guiname xml:lang="en">Text</guiname>
+        <guiname xml:lang="fr">Texte</guiname>
+        <guiname xml:lang="nl">Tekst</guiname>
+        <guiname xml:lang="eo">Teksto</guiname>
+      </gui>
+      <datatype base="field" xmlns="http://www.mmbase.org/xmlns/datatypes">
+        <maxLength value="64000" />
+      </datatype>
+    </field>
+    <field name="date">
+      <descriptions>
+        <description xml:lang="en">Publication date of the newsitem</description>
+        <description xml:lang="nl">Publicatiedatum van het nieuwsitem</description>
+      </descriptions>
+      <gui>
+        <guiname xml:lang="en">Date</guiname>
+        <guiname xml:lang="fr">Date</guiname>
+        <guiname xml:lang="nl">Datum</guiname>
+        <guiname xml:lang="eo">Date</guiname>
+      </gui>
+      <editor>
+        <positions>
+          <list>2</list>
+        </positions>
+      </editor>
+      <datatype base="datetime" xmlns="http://www.mmbase.org/xmlns/datatypes">
+        <default value="now" />
+      </datatype>
+    </field>
+    <!--
+    <field name="lastmodified" state="system">
+      <editor>
+        <positions>
+          <list>3</list>
+        </positions>
+      </editor>
+      <datatype base="lastmodified" xmlns="http://www.mmbase.org/xmlns/datatypes" />
+    </field>
+    <field name="lastmodifier" state="system">
+      <editor>
+        <positions>
+          <list>4</list>
+        </positions>
+      </editor>
+      <datatype base="lastmodifier" xmlns="http://www.mmbase.org/xmlns/datatypes" />
+    </field>
+    -->
+    <field name="magazine" state="virtual">
+      <descriptions>
+        <description xml:lang="en">A virtual field, backreferring to the magazine</description>
+      </descriptions>
+      <editor>
+        <positions>
+          <input>-1</input>
+        </positions>
+      </editor>
+      <datatype base="node" xmlns="http://www.mmbase.org/xmlns/datatypes" />
+    </field>
+    <field name="utitle" state="virtual" readonly="true">
+      <descriptions>
+        <description xml:lang="en">Another silly example of a virtual field</description>
+      </descriptions>
+      <datatype base="line" xmlns="http://www.mmbase.org/xmlns/datatypes" />
+    </field>
+  </fieldlist>
+</builder>
+

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/37504/speeltuin/mihxil/webservice/mmbase/src/main/config/xslt
+END
+xml2json.xslt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/!svn/ver/37325/speeltuin/mihxil/webservice/mmbase/src/main/config/xslt/xml2json.xslt
+END
+xml2xhtml.xslt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/!svn/ver/37504/speeltuin/mihxil/webservice/mmbase/src/main/config/xslt/xml2xhtml.xslt
+END

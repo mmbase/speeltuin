@@ -1,0 +1,214 @@
+<html
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mm="http://www.mmbase.org/mmbase-taglib-2.0"
+    >
+  <mm:content
+      expires="0"
+      type="application/xhtml+xml">
+    <head>
+      <title>Web services</title>
+    </head>
+    <body>
+      <h1>MMBase and WebServices</h1>
+
+      <h2>Native, defined via component</h2>
+      <p>This is by the way the block that reports all available web-services. This way that
+      information is available as a web-service too</p>
+
+      <p><a href="https://scm.mmbase.org/speeltuin/mihxil/webservice/mmbase/src/main/config/webservices.xml">Configuration</a></p>
+      <ul>
+        <li><a href="${mm:link('/ws/list.xml')}">XML</a></li>
+        <li><a href="${mm:link('/ws/list.json')}">Json</a></li>
+        <li><a href="${mm:link('/ws/list.html')}">HTML</a></li>
+        <li><a href="${mm:link('/ws/list.txt')}">Json with contenttype text/plain</a></li>
+      </ul>
+
+      <h2>Native, defined via function</h2>
+      <p><a href="https://scm.mmbase.org/speeltuin/mihxil/webservice/example-webapp/src/main/config/webservices.xml">Configuration</a></p>
+      <ul>
+        <li><a href="${mm:link('/ws/password2.xml')}">XML</a></li>
+        <li><a href="${mm:link('/ws/password2.json')}">Json</a></li>
+        <li><a href="${mm:link('/ws/password2.txt')}">Json with contenttype text/plain</a></li>
+        <li><a href="${mm:link('/ws/password2.html')}">HTML</a></li>
+        <li><a href="${mm:link('/ws/password2.txt?template=SSS')}">Using an argument</a></li>
+        <li><a href="${mm:link('/ws/password2.txt?template=xxx')}">Using an invalid argument</a></li>
+      </ul>
+
+      <h2>Native, defined via a 'method'</h2>
+      <p>
+        TODO: the parameters are now named parameter1, parameter2 etc. That's perhaps acceptable if
+        web-service can also support 'positioned' arguments, which is a least supported by the used
+        'Parameters' object, it is not supported by request#getParameters of j2ee though, so we'll
+        have to rewrite the QueryString-parsing.
+      </p>
+      <p>
+        Btw parameters could receive a name using @Name annotation. (should we somehow also support
+      the javax.ws annotations for that?)
+      </p>
+      <p><a href="https://scm.mmbase.org/speeltuin/mihxil/webservice/cxf/src/main/resources/org/mmbase/config/webservices.xml">Configuration</a></p>
+      <ul>
+        <li><a href="${mm:link('/ws/sayHi.xml')}">XML</a></li>
+        <li><a href="${mm:link('/ws/sayHi.json')}">Json</a></li>
+        <li><a href="${mm:link('/ws/sayHi.txt')}">Json with contenttype text/plain</a></li>
+        <li><a href="${mm:link('/ws/sayHi.txt?parameter1=World')}">Using an argument</a></li>
+        <li><a href="${mm:link('/ws/sayHi.txt?World')}">Using an invalid argument</a></li>
+      </ul>
+
+      <h2>Via an interface</h2>
+      <p><a href="https://scm.mmbase.org/speeltuin/mihxil/webservice/mmbase/src/main/java/org/mmbase/webservice/WebService.java">WebService.java</a></p>
+
+      <p>This is the way I finally ended up using. TODO, make a working example here</p>
+
+      <pre><mm:escape><![CDATA[
+public class OrderWebService extends AbstractWebService {
+
+    public static final String NS = "http://api.eo.nl/uis";
+
+    private final Parameter[] def;
+    private final List<Method> orderInfoSetters = new ArrayList<Method>();
+    private static final Parameter ACQ = new PatternParameter(Pattern.compile("p_[0-9]+_acqmethod"), DataTypes.getDataType("uis_product_acquisition_method"));
+
+    {
+        Parameter[] d;
+        try {
+            d = BeanFunction.getParameterDefinition(new OrderInfo(), orderInfoSetters);
+        } catch (Exception e) {
+            d = new Parameter[0];
+            log.error(e.getMessage(), e);
+
+        }
+        def = Functions.define(new Parameter[] { new Parameter.Wrapper(d),
+                                                 new Parameter("remarks", DataTypes.getDataType("uis_remarks")),
+                                                 new PatternParameter(Pattern.compile("p_[0-9]+_code"),      DataTypes.getDataType("uis_product_code")),
+                                                 new PatternParameter(Pattern.compile("p_[0-9]+_quantity"),  DataTypes.getDataType("uis_product_quantity")),
+                                                 ACQ,
+                                                 new PatternParameter(Pattern.compile("a_[0-9]+_name"),      DataTypes.getDataType("uis_attribute_name")),
+                                                 new PatternParameter(Pattern.compile("a_[0-9]+_value"),     DataTypes.getDataType("uis_attribute_value"))
+            }).toArray(Parameter.EMPTY);
+    }
+
+    Pattern NUMERIC = Pattern.compile("(.+)_([0-9]+)_(.+)");
+
+    public void serve(XMLStreamWriter writer, Parameters params) throws WebServiceException, XMLStreamException {
+
+        Map<Integer, Map<String, Object>> orders = new TreeMap<Integer, Map<String, Object>>();
+        Map<Integer, Map<String, Object>> attributes = new TreeMap<Integer, Map<String, Object>>();
+        OrderField of = new OrderField();
+        OrderInfo order = new OrderInfo();
+
+        try {
+            // The straight forward parameter associated with OrderInfo are set in the OrderInfo with this:
+            BeanFunction.setParameters(order, params, orderInfoSetters);
+
+
+            // Customized parameters assocaited with RemarkEntry's OrderEntry's and AttributeEntry are read now:
+
+            if (params.getString("remarks").length() > 0) {
+                of.add(new RemarkEntry(params.getString("remarks")));
+            }
+
+
+            for (Map.Entry<String, Object> entry : params.toMap().entrySet()) {
+                String param = entry.getKey();
+                Matcher matcher = NUMERIC.matcher(param);
+                if (matcher.matches()) {
+                    log.debug("Found " + param + "=" + Casting.toString(entry.getValue()));
+                    int number = Integer.parseInt(matcher.group(2));
+                    Map<String, Object> map;
+                    if (param.startsWith("p_")) {
+                        map = orders.get(number);
+                        if (map == null) map = new HashMap<String, Object>();
+                        orders.put(number, map);
+                    } else {
+                        map = attributes.get(number);
+                        if (map == null) map = new HashMap<String, Object>();
+                        attributes.put(number, map);
+                    }
+                    map.put(matcher.group(1) + "_" + matcher.group(3), Casting.toString(entry.getValue()));
+                } else {
+                    log.debug("" + param + " does not mach " + NUMERIC);
+                }
+            }
+        } catch (Exception e) {
+            throw new WebServiceException(e);
+        }
+        if (log.isDebugEnabled()) {
+            log.debug("" + params + " -> orders: " + orders + " attributes: " + attributes);
+        }
+
+        List<String> errors = new ArrayList<String>();
+        try {
+            for (Map.Entry<Integer, Map<String, Object>> entry : orders.entrySet()) {
+                Map<String, Object> o = entry.getValue();
+                if (o.get("p_acqmethod") == null) {
+                    //  A bit of a hack, it would be nicer if default values were filled in automaticly, somehow.
+                    o.put("p_acqmethod", ACQ.getDefaultValue());
+                }
+                if (o.size() != 3) {
+                    errors.add(entry.getKey() + ":" + o + " does not define an order entry (it should have p_code, p_quantity and p_acqmethod");
+                    continue;
+                }
+                of.add(new OrderEntry(Casting.toString(o.get("p_code")), Casting.toInteger(o.get("p_quantity")), Casting.toString(o.get("p_acqmethod"))));
+            }
+            for (Map.Entry<Integer, Map<String, Object>> entry : attributes.entrySet()) {
+                Map<String, Object> att = entry.getValue();
+                if (att.size() != 2) {
+                    errors.add(entry.getKey() + ":" + att + " does not define an attribute (it should have a_name and a_value");
+                    continue;
+                }
+                of.add(new AttributeEntry(Casting.toString(att.get("a_name")), Casting.toString(att.get("a_value"))));
+            }
+        } catch (Exception e) {
+            throw new WebServiceException(HttpServletResponse.SC_BAD_REQUEST, e.getMessage());
+        }
+        if (errors.size() > 0) {
+            throw new WebServiceException(HttpServletResponse.SC_BAD_REQUEST, errors.toString());
+        }
+
+
+        boolean result;
+        String orderNumber;
+        try {
+            order.setOrderField(of);
+            result = Order.insertAndFinalizeOrder(order);
+            orderNumber = order.getOrdernumber();
+            ordersLog.info("Created order " + orderNumber);
+        } catch (java.sql.SQLException sq) {
+            throw new WebServiceException(sq);
+        }
+
+        // now  produce XML result
+        writer.setPrefix("m", NS);
+        writer.setDefaultNamespace(NS);
+        writer.writeStartElement(NS,"result");
+        writer.writeAttribute("class", getClass().getName());
+        writer.writeAttribute("success", "" + result);
+        writer.writeNamespace("m", NS);
+        writer.writeDefaultNamespace(NS);
+        writer.writeCharacters(orderNumber);
+        writer.writeEndElement();
+
+    }
+
+    public Parameter[] getParameterDefinition() {
+        return def;
+    }
+]]></mm:escape>
+      </pre>
+
+
+      <h2>A protected webservice</h2>
+      <ul>
+        <li><a href="${mm:link('/ws/testaction.html')}">HTML</a></li>
+      </ul>
+
+      <h2>CXF (not impemented)</h2>
+      <ul>
+        <li><a href="${mm:link('/services/')}">CXF</a></li>
+      </ul>
+      <hr />
+      <mm:escape escape="links">$URL$</mm:escape>
+
+    </body>
+  </mm:content>
+</html>

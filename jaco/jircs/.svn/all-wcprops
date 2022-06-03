@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/!svn/ver/34607/speeltuin/jaco/jircs
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/!svn/ver/34607/speeltuin/jaco/jircs/LICENSE
+END
+changes.txt
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/!svn/ver/34607/speeltuin/jaco/jircs/changes.txt
+END
+jircs.dia
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/34607/speeltuin/jaco/jircs/jircs.dia
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/!svn/ver/34607/speeltuin/jaco/jircs/readme.txt
+END
+jircs.png
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/34607/speeltuin/jaco/jircs/jircs.png
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/!svn/ver/34607/speeltuin/jaco/jircs/build.xml
+END

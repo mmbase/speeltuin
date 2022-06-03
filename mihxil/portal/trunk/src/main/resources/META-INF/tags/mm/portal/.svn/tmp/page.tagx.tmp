@@ -1,0 +1,49 @@
+<jsp:root
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:mm="http://www.mmbase.org/mmbase-taglib-2.0"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    xmlns:mm-portal="http://www.mmbase.org/tags/mm/portal"
+    xmlns:mm-portalt="urn:jsptagdir:/WEB-INF/tags/mm/p"
+    version="2.0"
+    >
+  <jsp:directive.tag
+      description="Calculates the currently to be used page, it looks at related 'pages' object which are related to the 'current' node" />
+
+  <jsp:directive.attribute
+      name="date"
+      description="the date for which the current page object must be calculated. Defaults to 'now'. For possible syntaxes see:
+                   http://www.mmbase.org/api/org/mmbase/util/DynamicDate.html"
+      />
+  <jsp:directive.attribute name="id" required="true" type="java.lang.String" rtexprvalue="false" />
+  <jsp:directive.variable name-from-attribute="id" alias="page"   variable-class="org.mmbase.bridge.Node" scope="AT_END" />
+
+
+  <mm-portal:pages date="${date}">
+    <jsp:attribute name="constraints">
+      <mm:maxnumber value="1" />
+    </jsp:attribute>
+    <mm:node id="page" />
+  </mm-portal:pages>
+<<<<<<< .mine
+  <c:choose>
+    <c:when test="${empty _node}">
+      <mm:listnodescontainer type="pages" id="container" />
+    </c:when>
+    <c:otherwise>
+      <mm:relatednodescontainer type="pages"  id="container" />
+    </c:otherwise>
+  </c:choose>
+  <mm:listnodescontainer referid="container">
+    <mm:constraint field="online" operator="lt" value="${now}" />
+    <mm:constraint field="offline" operator="gt" value="${now}" />
+    <mm:constraint field="show" value="true" />
+    <mm:sortorder field="online" direction="down" /> <!-- show the one which went online most recently -->
+    <mm:maxnumber value="1" />
+    <mm:listnodes>
+      <mm:node id="page" />
+    </mm:listnodes>
+  </mm:listnodescontainer>
+=======
+
+>>>>>>> .r41514
+</jsp:root>

@@ -1,0 +1,22 @@
+<jsp:root
+    xmlns:jsp="http://java.sun.com/JSP/Page"
+    xmlns:mm="http://www.mmbase.org/mmbase-taglib-2.0"
+    xmlns:c="http://java.sun.com/jsp/jstl/core"
+    version="2.0"
+    >
+  <jsp:directive.tag
+      description="Using the x/y of the given blockposrel, it determins the related (Using 'cartesianrel') content to the current (_node), and iterates those." />
+  <jsp:directive.attribute name="blockposrel"        type="java.lang.Object"  required="true"
+                           description="The blockposrel to be used (e.g. provided by portal:blocks)" />
+  <jsp:directive.attribute name="type"        type="java.lang.String"
+                           description="The object type of the related object to be searched. This defaults to 'object'." />
+
+  <mm:node id="pos" referid="blockposrel" />
+  <mm:relatednodescontainer role="cartesianrel" type="${empty type ? 'object' : type}">
+    <mm:constraint field="cartesianrel.x" value="${pos.x}" />
+    <mm:constraint field="cartesianrel.y" value="${pos.y}" />
+    <mm:relatednodes>
+      <jsp:doBody />
+    </mm:relatednodes>
+  </mm:relatednodescontainer>
+</jsp:root>

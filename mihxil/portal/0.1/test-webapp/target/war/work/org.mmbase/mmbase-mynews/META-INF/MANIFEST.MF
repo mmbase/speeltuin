@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: nightly
+Build-Jdk: 1.5.0_11
+url: http://www.mmbase.org/mm2/mmbase-parent/mmbase-application-parent
+ /mmbase-mynews
+
+Name: org/mmbase
+Build-Date: 2009-12-11T05:28
+Comment: MMBase. MMBase MyNews (mmbase-mynews).
+Description: The MyNews application is one of the oldest MMBase exampl
+ es that still exists. It shows you a very simple
+     approach to a news site, where you can see a list of news article
+ s and click on one to view detail information.
+     In its simplicity it is a good example to see how the basic MMBas
+ e taglib works.
+Distribution: 1.9-SNAPSHOT
+SCM-Revision: 40220
+Vendor: MMBase Community
+Version: 1.9-SNAPSHOT.2009-12-11T05:28
+

@@ -1,0 +1,78 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Building MMBase Example webapp
+[INFO]    task-segment: [jetty:run]
+[INFO] ------------------------------------------------------------------------
+[INFO] Preparing jetty:run
+[INFO] [buildnumber:create {execution: default}]
+[INFO] Checking for local modifications: skipped.
+[INFO] Updating project files from SCM: skipped.
+[INFO] Executing: /bin/sh -c cd /home/michiel/mmbase/trunk/example-webapp && svn --non-interactive info
+[INFO] Working directory: /home/michiel/mmbase/trunk/example-webapp
+[INFO] Storing buildNumber: 37406 at timestamp: 2009-08-06T12:06
+[INFO] [resources:resources]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/trunk/example-webapp/src/main/java
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/trunk/example-webapp/src/main/resources
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/trunk/example-webapp/src/main/resources-filtered
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/trunk/example-webapp/src/main/config
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/trunk/example-webapp/target/generated/src/main/resources
+[INFO] [compiler:compile]
+[INFO] No sources to compile
+[INFO] [resources:testResources]
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/trunk/example-webapp/src/test/java
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/trunk/example-webapp/src/test/resources
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/trunk/example-webapp/src/test/java
+[INFO] skip non existing resourceDirectory /home/michiel/mmbase/trunk/example-webapp/target/generated/src/test/resources
+[INFO] [compiler:testCompile]
+[INFO] No sources to compile
+[INFO] [jetty:run]
+[INFO] Configuring Jetty for project: MMBase Example webapp
+[INFO] Webapp source directory = /home/michiel/mmbase/trunk/example-webapp/src/main/webapp
+[INFO] Reload Mechanic: automatic
+[INFO] web.xml file = /home/michiel/mmbase/trunk/example-webapp/src/main/webapp/WEB-INF/web.xml
+[INFO]  jetty-env.xml = /home/michiel/mmbase/trunk/example-webapp/jetty-env.xml
+[INFO] Classes directory /home/michiel/mmbase/trunk/example-webapp/target/classes does not exist
+[INFO] Context path = /example-webapp
+[INFO] Tmp directory =  determined at runtime
+[INFO] Web defaults = org/mortbay/jetty/webapp/webdefault.xml
+[INFO] Web overrides =  none
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/base-webapp/1.9-servlet25-SNAPSHOT/base-webapp-1.9-servlet25-SNAPSHOT.war!/
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/mmbase-resources/1.9-SNAPSHOT/mmbase-resources-1.9-SNAPSHOT.war!/
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/mmbase-mynews/1.9-SNAPSHOT/mmbase-mynews-1.9-SNAPSHOT.war!/
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/mmbase-editwizard/1.9-SNAPSHOT/mmbase-editwizard-1.9-SNAPSHOT.war!/
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/mmbase-editwizard/1.9-SNAPSHOT/mmbase-editwizard-1.9-SNAPSHOT-examples.war!/
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/mmbase-taglib/1.9-SNAPSHOT/mmbase-taglib-1.9-SNAPSHOT-examples.war!/
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/mmbase-crontab/1.9-SNAPSHOT/mmbase-crontab-1.9-SNAPSHOT.war!/
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/mmbase-lucene/1.9-SNAPSHOT/mmbase-lucene-1.9-SNAPSHOT.war!/
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/mmbase-scan/1.9-SNAPSHOT/mmbase-scan-1.9-SNAPSHOT.war!/
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/mmbase-statistics/0.4-SNAPSHOT/mmbase-statistics-0.4-SNAPSHOT.war!/
+[INFO] Adding overlay: jar:file:/home/michiel/.m2/repository/org/mmbase/editwizards/htmlarea/3.0-rc1-mm19/htmlarea-3.0-rc1-mm19.war!/
+[INFO] Webapp directory = /home/michiel/mmbase/trunk/example-webapp/src/main/webapp
+[INFO] Starting jetty 6.1.16 ...
+2009-08-06 12:06:30,096 INFO Starting UrlFilter
+2009-08-06 12:06:31,013 INFO Set thread delay time to 10000
+2009-08-06 12:06:31,068 INFO Found classWeights {\Ajar:file:/home/michiel/mmbase/trunk/example-webapp/target/work/lib/Jetty-2685310474639506075\.jar!/org/mmbase/config/datatypes.xml\z=-1}
+2009-08-06 12:06:31,155 INFO Logging: org.mmbase.util.logging.log4j.Log4jImpl (log4j.xml).  Configured in file:/home/michiel/mmbase/trunk/example-webapp/src/main/webapp/WEB-INF/config/log/log.xml
+2009-08-06 12:06:31,252 INFO logging configurationfile : log4j.xml
+2009-08-06 12:06:31,278 INFO using /log/ resolving in [nodes of type 0, {}, /home/michiel/mmbase/trunk/example-webapp/src/main/webapp/WEB-INF/config, ClassLoader /org/mmbase/config, ClassLoader /] for resolving log4j.xml -> file:/home/michiel/mmbase/trunk/example-webapp/src/main/webapp/WEB-INF/config/log/log4j.xml
+2009-08-06 12:06:31,495 INFO    mmbase.module.core.MMBaseContext - ===========================
+2009-08-06 12:06:31,495 INFO    mmbase.module.core.MMBaseContext - MMBase logging initialized.
+2009-08-06 12:06:31,495 INFO    mmbase.module.core.MMBaseContext - ===========================
+2009-08-06 12:06:31,495 INFO    mmbase.module.core.MMBaseContext - java.version       : 1.6.0_11
+2009-08-06 12:06:31,495 INFO    mmbase.module.core.MMBaseContext - user.dir          : /home/michiel/mmbase/trunk/example-webapp
+2009-08-06 12:06:31,495 INFO    mmbase.module.core.MMBaseContext - configuration     : / resolving in [nodes of type 0, {}, /home/michiel/mmbase/trunk/example-webapp/src/main/webapp/WEB-INF/config, ClassLoader /org/mmbase/config, ClassLoader /]
+2009-08-06 12:06:31,496 INFO    mmbase.module.core.MMBaseContext - webroot           : / resolving in [/home/michiel/mmbase/trunk/example-webapp/src/main/webapp, ServletResource /]
+2009-08-06 12:06:31,514 INFO    mmbase.module.core.MMBaseContext - version           : MMBase 1.9.2.2009-08-06T12:05 (r37549)
+2009-08-06 12:06:31,514 INFO    mmbase.module.core.MMBaseContext - total memory      : 78 MiB
+2009-08-06 12:06:31,514 INFO    mmbase.module.core.MMBaseContext - free memory       : 25 MiB
+2009-08-06 12:06:31,557 INFO    mmbase.module.core.MMBaseContext - MMBase locale     : en
+2009-08-06 12:06:31,763 INFO    mmbase.module.core.MMBaseContext - start time        : Thursday, August 6, 2009 12:06:31 PM CEST
+2009-08-06 12:06:31,763 INFO    mmbase.module.core.MMBaseContext - mmbase.htmlroot   : /home/michiel/mmbase/trunk/example-webapp/src/main/webapp
+2009-08-06 12:06:31,764 INFO    mmbase.module.core.MMBaseContext - context           : /example-webapp/
+2009-08-06 12:06:32,123 WARN    STDERR - 2009-08-06 12:06:32.123::INFO:  Started SelectChannelConnector@0.0.0.0:8080
+[INFO] Started Jetty Server
+2009-08-06 12:06:52,130 ERROR   mmbase.applications.email.SendMail - SendMail failure: null
+2009-08-06 12:06:52,131 FATAL   mmbase.applications.email.SendMail - Could not create Mail session
+2009-08-06 12:06:54,692 WARN    mmbase.util.functions.FunctionSets - REGISTERINGhttp://www.mmbase.org/xmlns/functionset.xsd  functionset.xsd class org.mmbase.util.functions.FunctionSets

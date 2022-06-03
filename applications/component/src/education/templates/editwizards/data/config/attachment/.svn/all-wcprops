@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/34607/speeltuin/applications/component/src/education/templates/editwizards/data/config/attachment
+END
+extra_steps.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/34607/speeltuin/applications/component/src/education/templates/editwizards/data/config/attachment/extra_steps.xml
+END
+extra_loads.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/34607/speeltuin/applications/component/src/education/templates/editwizards/data/config/attachment/extra_loads.xml
+END
+extra_schemas.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/34607/speeltuin/applications/component/src/education/templates/editwizards/data/config/attachment/extra_schemas.xml
+END
+attachment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/34607/speeltuin/applications/component/src/education/templates/editwizards/data/config/attachment/attachment.xml
+END
+attachments.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/34607/speeltuin/applications/component/src/education/templates/editwizards/data/config/attachment/attachments.xml
+END
+attachments-posrel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/!svn/ver/34607/speeltuin/applications/component/src/education/templates/editwizards/data/config/attachment/attachments-posrel.xml
+END

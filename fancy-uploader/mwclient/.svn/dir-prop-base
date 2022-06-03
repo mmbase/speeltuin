@@ -1,0 +1,6 @@
+K 13
+svn:externals
+V 66
+simplejson http://simplejson.googlecode.com/svn/trunk/simplejson/
+
+END

@@ -1,0 +1,37 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: michiel
+Build-Jdk: 1.6.0_11
+url: http://www.mmbase.org/mm2/mmbase-parent/mmbase-application-parent
+ /mmbase-vpro-wizards
+Class-Path: spring-webmvc-2.5.6.jar spring-beans-2.5.6.jar spring-core
+ -2.5.6.jar spring-context-2.5.6.jar aopalliance-1.0.jar spring-contex
+ t-support-2.5.6.jar spring-web-2.5.6.jar nekohtml-1.9.6.2.jar xercesI
+ mpl-2.8.1.jar xml-apis-1.3.03.jar commons-lang-2.4.jar collections-ge
+ neric-4.01.jar
+
+Name: org/mmbase
+Build-Date: 2009-12-11T13:17
+Comment: MMBase. MMBase VPRO Wizards (mmbase-vpro-wizards).
+Description: This toolkit provides an easy way to create task-oriented
+     editors like the
+     editwizards. The big difference is that editors
+     are
+     created with jsp's
+     using tag file libraries, and 'action' java
+     beans for
+     performing tasks.
+     Action beans are provided for the
+     common mmbase
+     editing tasks, like
+     creating, deleting and updating nods and
+     relations,
+     as
+     well as sorting lists of related nodes. It is easy to extend the
+     system your own custom actions.
+Distribution: 2.0-SNAPSHOT
+SCM-Revision: 40213
+Vendor: MMBase Community
+Version: 2.0-SNAPSHOT.2009-12-11T13:17
+

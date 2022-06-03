@@ -1,0 +1,25 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jenkins
+Build-Jdk: 1.6.0_0
+Hudson-Build-Number: 152
+Hudson-Project: MMBase 1.9 servlet25
+Hudson-Version: 1.404
+url: http://www.mmbase.org/mm2/mmbase-parent/base-webapp
+Class-Path: mmbase-1.9-SNAPSHOT.jar commons-fileupload-1.2.1.jar commo
+ ns-io-1.3.2.jar jstl-1.2.jar log4j-1.2.14.jar yuicompressor-2.4.2-mmb
+ ase.jar oscache-2.4.jar commons-logging-1.1.1.jar jms-1.1.jar doclet-
+ 5.1.jar
+
+Name: org/mmbase
+Build-Date: 2011-06-22T19:31
+Comment: MMBase. MMBase Base webapp (base-webapp).
+Description: This is a minimalistic war containing the essentials for 
+ an MMBase web applications.
+     This can be used as initial war overlay for your own project.
+Distribution: 1.9-servlet25-SNAPSHOT
+SCM-Revision: 45815
+Vendor: MMBase Community
+Version: 1.9-servlet25-SNAPSHOT.2011-06-22T19:31
+

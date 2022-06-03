@@ -1,0 +1,30 @@
+2,2,system,typedef,Defines object types
+3,2,system,object,Objects
+4,2,system,versions,Keeps track of what versions of apps/builders etc etc are installed
+5,2,system,reldef,Assigns roles to relation object types
+6,2,system,insrel,Basic relation
+7,2,system,typerel,Defines the allowed relations between object types
+8,2,system,mmservers,MMBase Servers defines node of a MMBase within this system
+10,2,system,blocks,Building blocks for a (home)page
+12,2,system,urls,Urls to external sites
+14,2,system,blockposrel,"Relation in which x, y, z position and width and height can be stored.
+      There's also a unit field, which contains the unit of the previous fields
+      (atm only pixels or blocks are allowed)."
+16,2,system,icaches,Cache for rendered images
+18,2,system,images,Images
+20,2,system,posrel,This relation has a position attribute
+22,2,system,oalias,An (object) alias can be a - more human readable - name substitution for an object
+24,2,system,pages,A page in a website
+26,2,system,mags,Magazines
+28,2,system,topics,"The topic of a other object, for example the topic of a piece of video"
+30,2,system,cartesianrel,"Basic relation containing three dimensional cartesian coordinates (x, y, z)"
+33,2,system,attachments,"Attachment, such as a PDF file"
+36,2,system,systemproperties,"This object type facilitates the use of nodes as system properties.
+     The special property ""mmservers"" is used to switch between environments 
+     (production, acceptance, test and development).
+     The SystemProperties class will search for the mmba"
+39,2,system,flashobjects,Flash animations
+42,2,system,daymarks,Daycount object used to keep track of ages of objects
+47,2,system,people,People
+49,2,system,news,News item
+52,2,system,syncnodes,Synchronisation Nodes are used to map remote MMBase nodes to this node

@@ -1,0 +1,2 @@
+73,18,system,Transparent pixel,This pixel can be used as a base-image for image-conversion,png,86,1,1,transparent.png
+118,18,default,Test transparency image,Test transparency image,png,65062,800,600,transparent.png

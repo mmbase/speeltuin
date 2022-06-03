@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/!svn/ver/34607/speeltuin/ernst/tagfileparser/src/nl/vpro/util
+END
+StringUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/34607/speeltuin/ernst/tagfileparser/src/nl/vpro/util/StringUtil.java
+END
+IllegalParameterException.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/34607/speeltuin/ernst/tagfileparser/src/nl/vpro/util/IllegalParameterException.java
+END
