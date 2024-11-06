@@ -1,126 +1,0 @@
-10
-
-dir
-37042
-https://scm.mmbase.org/speeltuin/applications/packaging/templates/jsp/packagemanager
-https://scm.mmbase.org
-
-
-
-2004-07-12T11:14:36.000000Z
-11124
-daniel
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-91430c5f-d668-0410-9e7d-dd663366dcfd
-
-settings
-dir
-
-index.jsp
-file
-
-
-
-
-2009-05-01T13:24:38.000000Z
-b9faccc567a6052abf53f4afc2623ee0
-2004-07-01T12:36:45.000000Z
-11070
-daniel
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1560
-
-images
-dir
-
-css
-dir
-
-help
-dir
-
-headers
-dir
-
-sharing
-dir
-
-bundles
-dir
-
-shareautoconfig.jsp
-file
-
-
-
-
-2009-05-01T13:24:38.000000Z
-37108d867ff17c7448286456f8ab3861
-2004-06-11T13:17:47.000000Z
-10849
-daniel
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-423
-
-providers
-dir
-
-thememanager
-dir
-
-packages
-dir
-

@@ -1,6 +1,0 @@
-K 13
-svn:externals
-V 79
-mwclient https://mwclient.svn.sourceforge.net/svnroot/mwclient/trunk/mwclient/
-
-END

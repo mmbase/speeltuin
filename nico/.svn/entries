@@ -1,83 +1,0 @@
-10
-
-dir
-37042
-https://scm.mmbase.org/speeltuin/nico
-https://scm.mmbase.org
-
-
-
-2007-07-27T10:15:02.000000Z
-24782
-michiel
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-91430c5f-d668-0410-9e7d-dd663366dcfd
-
-portlets-calendar-contrib
-dir
-
-project.properties
-file
-
-
-
-
-2009-05-01T13:24:51.000000Z
-534749070576f0343e4cf2ca3a7a0895
-2007-06-15T16:34:43.000000Z
-24087
-nklasens
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-141
-
-editwizardRefactored
-dir
-
-editwizard
-dir
-
-portlets-mmcomponent
-dir
-
-mmcomponent-webapp
-dir
-
-LanguageModule
-dir
-
-maven-base
-dir
-
