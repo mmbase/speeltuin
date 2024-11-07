@@ -20,7 +20,7 @@ deploy: jquery.ui.war
 	 -DgeneratePom.description='JQuery ui' -DgroupId=org.mmbase.jquery -DartifactId=jquery-ui   \
 	 -Dversion=$(version)$(subversion) -Dpackaging=war \
 	-Dfile=jquery.ui.war \
-	-Durl=scp://mmbase.org/home/mmweb/web/maven2 -DrepositoryId=mmbase
+	-Durl=https://oss.sonatype.org/service/local/repositories/releases/content -DrepositoryId=ossrh
 
 build/mmbase/jquery/jquery-ui.jspx:
 	mkdir -p build/mmbase/jquery/
@@ -35,4 +35,3 @@ $(zip):
 clean:
 	rm -rf build
 	rm -rf jquery.ui.war
-

@@ -4,7 +4,7 @@ version_=3_2_7
 compressorversion=2.0.2
 compressorversion_=2_0_2
 
-subversion=2
+subversion=
 
 zip=tinymce_$(version_)_jquery.zip
 compressorzip=tinymce_compressor_jsp_$(compressorversion_).zip
@@ -36,9 +36,9 @@ $(compressorzip):
 deploy: tinymce.war
 	mvn deploy:deploy-file \
 	 -DgeneratePom.description='TinyMCE/jquery. Including also TinyMCE:Compressor/JSP' -DgroupId=org.mmbase.tinymce -DartifactId=tinymce-jquery   \
-	 -Dversion=$(version)-$(subversion) -Dpackaging=war \
+	 -Dversion=$(version)$(subversion) -Dpackaging=war \
 	-Dfile=tinymce.war \
-	-Durl=scp://mmbase.org/home/mmweb/web/maven2 -DrepositoryId=mmbase
+	-Durl=https://oss.sonatype.org/service/local/repositories/releases/content -DrepositoryId=ossrh
 
 
 clean:
