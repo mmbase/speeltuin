@@ -1,7 +1,7 @@
 version=1.14.1
-subversion=-1
+subversion=-2
 zip=jquery-ui-$(version).custom.zip
-js=jquery-ui-$(version).custom.min.js
+js=jquery-ui.min.js
 
 .PHONY: clean
 
